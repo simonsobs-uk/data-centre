@@ -18,7 +18,7 @@ extensions = [
 ]
 source_suffix = [".md", ".rst"]
 master_doc = "index"
-project = "souk-data-centre"
+project = 'SO:UK Data Centre'
 year = "2023"
 author = "SO:UK Collaborators"
 copyright = f"{year}, {author}"
