@@ -1,7 +1,5 @@
 # User guide
 
-This is intended to be read by typical users following our recommended usage.
-
 ```{toctree}
 :maxdepth: 2
 :hidden:
@@ -9,3 +7,5 @@ This is intended to be read by typical users following our recommended usage.
 
 user/pipeline.md
 ```
+
+This is intended to be read by typical users following our recommended usage.
