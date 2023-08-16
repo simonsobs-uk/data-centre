@@ -6,10 +6,12 @@ PORT ?= 8099
 doc:
 	sphinx-build -E -b dirhtml docs dist/docs
 serve: doc
-	@cd dist/docs && \
-	( python -m http.server $(PORT) --bind 127.0.0.1 & ) && \
-	open http://127.0.0.1:$(PORT) && \
-	wait
+	@cd dist/docs && ( \
+		trap 'kill 0' SIGINT; \
+		python -m http.server $(PORT) --bind 127.0.0.1 & \
+		open http://127.0.0.1:$(PORT) && \
+		wait \
+	)
 
 ################################################################################
 
