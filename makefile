@@ -1,7 +1,18 @@
+PORT ?= 8099
+
+# documentation ################################################################
+
+.PHONY: doc serve
 doc:
 	sphinx-build -E -b dirhtml docs dist/docs
 serve: doc
-	open http://127.0.0.1:8099
-	cd dist/docs; python -m http.server 8099 --bind 127.0.0.1
+	@cd dist/docs && \
+	( python -m http.server $(PORT) --bind 127.0.0.1 & ) && \
+	open http://127.0.0.1:$(PORT) && \
+	wait
+
+################################################################################
+
+.PHONY: clean
 clean:
 	rm -rf dist
