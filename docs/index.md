@@ -2,7 +2,7 @@
 
 ```{toctree}
 :maxdepth: 2
-:caption: SO:UK Data Centre
+:caption: Contents
 
 api/modules
 ```
