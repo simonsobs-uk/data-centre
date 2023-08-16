@@ -1,27 +1,35 @@
+SPHINXOPTS    ?=
+SPHINXBUILD   ?= sphinx-build
+SOURCEDIR     = docs
+BUILDDIR      = dist/docs
+
 PORT ?= 8099
 DOC_DEP = $(shell find docs -type f \( -name '*.md' -o -name '*.rst' \)) $(shell find src -type f -name '*.py')
 
 # documentation ################################################################
 
-.PHONY: all doc epub
+.PHONY: all doc epub pdf
 all: doc epub
 doc: dist/docs/.sentinel
-epub: dist/docs.epub
+epub: dist/docs/epub/SOUKDataCentre.epub
+pdf: dist/docs/latex/soukdatacentre.pdf
 
 dist/docs/.sentinel: $(DOC_DEP)
-	sphinx-build -E -b dirhtml docs $(@D)
+	@$(SPHINXBUILD) -M dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 	touch $@
 dist/docs.epub: $(DOC_DEP)
-	sphinx-build -E -b epub docs $@
+	@$(SPHINXBUILD) -M epub "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+dist/docs.pdf: $(DOC_DEP)
+	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 
 .PHONY: serve
 serve: doc
 	sphinx-autobuild \
-		-E -b dirhtml \
+		-b dirhtml $(SPHINXOPTS) \
 		--port $(PORT) \
 		--open-browser \
 		--delay 0 \
-		docs dist/docs
+		"$(SOURCEDIR)" "$(BUILDDIR)"
 
 ################################################################################
 
