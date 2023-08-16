@@ -1,8 +1,3 @@
-html_css_files = [
-    "https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css/css/_table.min.css",
-    "https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css/fonts/fonts.min.css",
-]
-
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
