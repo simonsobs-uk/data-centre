@@ -1,0 +1,8 @@
+- Setup environments using conda
+- Setup Github Actions for GitHub Pages
+- Setup Readthedocs
+	- build pdf
+- Setup souk.ac.uk?
+- Setup bump2version
+- Check why search/ is not working
+- revisit which badges to include
