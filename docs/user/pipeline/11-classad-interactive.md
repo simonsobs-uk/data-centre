@@ -18,6 +18,10 @@ After submitting and waiting for a while, you will be dropped into an interactiv
 Interactive node is in the vanilla universe in HTCondor, meaning that you cannot requests multiple nodes here.
 :::
 
+:::{note}
+You'd see that output files are automatically transferred back to your submit node. We will soon see how to specify manually what to transfer, which is especially important if you have some output files under some directories.
+:::
+
 ## Explanation
 
 `RequestMemory=32999`
