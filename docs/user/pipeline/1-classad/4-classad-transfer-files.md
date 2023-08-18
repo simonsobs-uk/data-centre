@@ -1,16 +1,16 @@
-# Writing ClassAd—Transferring files
+# Transferring files
 
 The simplest example that involve file transfer is the job script itself.
 
 create a file `example.ini`,
 
-```{literalinclude} 14-classad-transfer-files/repl.ini
+```{literalinclude} 4-classad-transfer-files/repl.ini
 :language: ini
 ```
 
 This ClassAd involve transferring a script named `repl.sh`, and be default it will be copied to worker nodes:
 
-```{literalinclude} 14-classad-transfer-files/repl.sh
+```{literalinclude} 4-classad-transfer-files/repl.sh
 :language: sh
 ```
 

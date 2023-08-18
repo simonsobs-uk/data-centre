@@ -1,8 +1,8 @@
-# Writing ClassAd—vanilla universe
+# Vanilla universe
 
 To request a job in the vanilla universe, create a file `example.ini`,
 
-```{literalinclude} 12-classad-vanilla/example.ini
+```{literalinclude} 2-classad-vanilla/example.ini
 :language: ini
 ```
 

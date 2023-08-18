@@ -1,8 +1,8 @@
-# Writing ClassAd—vanilla universe
+# Parallel universe
 
 To request a job in the parallel universe, create a file `example.ini`,
 
-```{literalinclude} 13-classad-parallel/example.ini
+```{literalinclude} 3-classad-parallel/example.ini
 :language: ini
 ```
 

@@ -1,8 +1,8 @@
-# Writing ClassAd—Interactive job
+# Interactive job
 
 To request an interactive job in the vanilla universe, create a file `example.ini`,
 
-```{literalinclude} 11-classad-interactive/example.ini
+```{literalinclude} 1-classad-interactive/example.ini
 :language: ini
 ```
 
