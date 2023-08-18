@@ -1,8 +1,10 @@
 - Setup environments using conda
 - Setup Github Actions for GitHub Pages
 - Setup Readthedocs
-	- build pdf
+	- build pdf @done
 - Setup souk.ac.uk?
 - Setup bump2version
 - Check why search/ is not working
 - revisit which badges to include
+- make linkcheck
+- make a plain text version for LLM proofreading
