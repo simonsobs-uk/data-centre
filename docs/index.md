@@ -4,7 +4,6 @@
 :maxdepth: 2
 :numbered:
 :hidden:
-:caption: Contents
 
 user.md
 developer.md
