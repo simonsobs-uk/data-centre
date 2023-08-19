@@ -19,7 +19,7 @@ Interactive node is in the vanilla universe in HTCondor, meaning that you cannot
 :::
 
 :::{note}
-You'd see that output files are automatically transferred back to your submit node. We will soon see how to specify manually what to transfer, which is especially important if you have some output files under some directories.
+Right now there is not much you can do with this interactive nodes as you have no access to `HOME`, no software environment loaded, and no data. Any of the software deployment methods or data I/O mentioned later can be applied here.
 :::
 
 ## Explanation

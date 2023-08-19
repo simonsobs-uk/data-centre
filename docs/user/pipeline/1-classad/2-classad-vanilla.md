@@ -14,6 +14,10 @@ condor_submit example.ini; tail -F hello_world.log hello_world.out hello_world.e
 
 The `tail` will shows you the status of your job in real time.
 
+:::{note}
+You'd see that output files are automatically transferred back to your submit node. We will soon see how to specify manually what to transfer, which is especially important if you have some output files under some directories.
+:::
+
 ## Explanation
 
 `executable = /bin/echo`
