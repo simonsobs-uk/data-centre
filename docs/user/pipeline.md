@@ -1,4 +1,4 @@
-(pipeline)=
+(running-pipelines)=
 # Running pipelines
 
 ```{toctree}
