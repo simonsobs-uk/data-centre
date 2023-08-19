@@ -7,6 +7,10 @@ build:
     python: "mambaforge-22.9"
 conda:
   environment: environment.yml
+python:
+  install:
+    - method: pip
+      path: .
 sphinx:
   configuration: docs/conf.py
   builder: "dirhtml"
