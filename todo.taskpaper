@@ -1,6 +1,6 @@
-- Setup environments using conda
-- Setup Github Actions for GitHub Pages
-- Setup Readthedocs
+- Setup environments using conda @done
+- Setup Github Actions for GitHub Pages @done
+- Setup Readthedocs @done
 	- build pdf @done
 - Setup souk.ac.uk?
 - Setup bump2version
