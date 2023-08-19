@@ -1,3 +1,4 @@
+(user)=
 # User guide
 
 ```{toctree}
@@ -5,6 +6,7 @@
 :hidden:
 
 user/onboarding.md
+user/quick-start.md
 user/pipeline.md
 ```
 
