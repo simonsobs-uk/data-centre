@@ -1,3 +1,4 @@
+(1-classad-interactive)=
 # Interactive job
 
 To request an interactive job in the vanilla universe, create a file `example.ini`,

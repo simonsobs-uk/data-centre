@@ -1,3 +1,4 @@
+(OpenMPI)=
 # OpenMPI
 
 ## Deploying MPI applications using the provided wrapper
