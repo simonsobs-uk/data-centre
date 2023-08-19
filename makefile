@@ -15,10 +15,10 @@ epub: dist/docs/epub/SOUKDataCentre.epub
 pdf: dist/docs/latex/soukdatacentre.pdf
 
 dist/docs/.sentinel: $(DOC_DEP)
-	@$(SPHINXBUILD) -M dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+	@$(SPHINXBUILD) -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 	touch $@
 dist/docs.epub: $(DOC_DEP)
-	@$(SPHINXBUILD) -M epub "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+	@$(SPHINXBUILD) -b epub "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 dist/docs.pdf: $(DOC_DEP)
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 
