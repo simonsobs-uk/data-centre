@@ -1,0 +1,16 @@
+# run the following command to create a conda environment
+# conda env create -f environment.yml
+# conda activate soukdc
+# update using
+# conda env update --name soukdc --file environment.yml --prune
+name: soukdc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - sphinx
+  - sphinx-autobuild
+  - sphinxcontrib-apidoc
+  - myst-parser
+  - furo
+  - linkify-it-py
