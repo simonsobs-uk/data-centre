@@ -25,10 +25,10 @@ echo "Environment is available at:"
 which python
 which mpirun
 
-# print_double_line
+print_double_line
 echo "Running TOAST tests..."
 mpirun -n 8 python -c "import toast.tests; toast.tests.run()"
 
-# print_double_line
+print_double_line
 echo "Running TOAST benchmarks..."
 mpirun -n 8 toast_benchmark.py
