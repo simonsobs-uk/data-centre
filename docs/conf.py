@@ -4,8 +4,8 @@ author = "SO:UK Collaborators"
 year = "2023"
 copyright = f"{year}, {author}"
 del year
-version = "0.1"
 release = "0.1.0"
+version = ".".join(release.split(".")[:-1])
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
