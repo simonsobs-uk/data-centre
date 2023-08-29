@@ -15,10 +15,18 @@ This ClassAd involve transferring a script named `repl.sh`, and be default it wi
 And then you can submit your job using
 
 ```bash
+condor_submit repl.ini
+```
+
+After waiting for a while as the job finished, you can see what happened by reading the contents of `log`, `output`, and `error` as specified in the ClassAd.
+
+See [](#monitor) to see how to monitor the status of your job. For advance use, use this command instead,
+
+```bash
 condor_submit repl.ini; tail -F repl.log repl-0.out repl-0.err repl-1.out repl-1.err
 ```
 
-The `tail` will shows you the status of your job in real time.
+and see [](#tail) for an explanation on what it does.
 
 :::{note}
 We normally won't use the `module` system here, but if needed, notice the shebang `#!/bin/bash -l` is necessary for `module` to be found.
@@ -44,8 +52,18 @@ To prepare the file for `transfer_input_files`, let's create `cat.txt` with the 
 And then submit your job using
 
 ```bash
+condor_submit cat.ini
+```
+
+After waiting for a while as the job finished, you can see what happened by reading the contents of `log`, `output`, and `error` as specified in the ClassAd.
+
+See [](#monitor) to see how to monitor the status of your job. For advance use, use this command instead,
+
+```bash
 condor_submit cat.ini; tail -F cat.log cat-0.out cat-0.err cat-1.out cat-1.err
 ```
+
+and see [](#tail) for an explanation on what it does.
 
 If you want to transfer more than one files, delimit them with a comma, like so:
 

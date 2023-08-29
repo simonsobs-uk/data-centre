@@ -9,10 +9,18 @@ To request a job in the parallel universe, create a file `example.ini`,
 And then submit your job using
 
 ```bash
+condor_submit example.ini
+```
+
+After waiting for a while as the job finished, you can see what happened by reading the contents of `log`, `output`, and `error` as specified in the ClassAd.
+
+See [](#monitor) to see how to monitor the status of your job. For advance use, use this command instead,
+
+```bash
 condor_submit example.ini; tail -F hello_world.log hello_world-0.out hello_world-0.err hello_world-1.out hello_world-1.err
 ```
 
-The `tail` will shows you the status of your job in real time.
+and see [](#tail) for an explanation on what it does.
 
 ## Explanation
 

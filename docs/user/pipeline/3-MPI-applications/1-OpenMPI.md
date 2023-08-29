@@ -66,8 +66,18 @@ So when `env.sh` is run, in each of the HTCondor process, the software environme
 Lastly, submit the job as usual by
 
 ```sh
-condor_submit mpi.ini && tail -F mpi.log mpi-0.out mpi-0.err mpi-1.out mpi-1.err
+condor_submit mpi.ini
 ```
+
+After waiting for a while as the job finished, you can see what happened by reading the contents of `log`, `output`, and `error` as specified in the ClassAd.
+
+See [](#monitor) to see how to monitor the status of your job. For advance use, use this command instead,
+
+```sh
+condor_submit mpi.ini; tail -F mpi.log mpi-0.out mpi-0.err mpi-1.out mpi-1.err
+```
+
+and see [](#tail) for an explanation on what it does.
 
 :::{warning}
 It is known that when running the TOAST3 test suite with OpenMPI using our provided software environment has some failed unit tests. We are investigating and will be fixed in the future.

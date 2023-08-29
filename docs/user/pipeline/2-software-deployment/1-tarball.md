@@ -55,10 +55,18 @@ Here you see that the tarball is unarchived to `/tmp`, and then the conda enviro
 And then you can submit your job using
 
 ```bash
+condor_submit tarball.ini
+```
+
+After waiting for a while as the job finished, you can see what happened by reading the contents of `log`, `output`, and `error` as specified in the ClassAd.
+
+See [](#monitor) to see how to monitor the status of your job. For advance use, use this command instead,
+
+```bash
 condor_submit tarball.ini; tail -F tarball.log tarballs.out tarball.err
 ```
 
-The `tail` will shows you the status of your job in real time.
+and see [](#tail) for an explanation on what it does.
 
 :::{note}
 We would note that in this specific example, it takes around 50s to unarchive the environment. So for long running jobs this becomes negligible. But if you starts multiple short running jobs, this is not an optimal method to deploy software.
