@@ -3,6 +3,9 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = docs
 BUILDDIR      = dist/docs
 
+# for bump2version, valid options are: major, minor, patch
+PART ?= patch
+
 PORT ?= 8099
 DOC_DEP = $(shell find docs -type f \( -name '*.md' -o -name '*.rst' \)) $(shell find src -type f -name '*.py')
 
@@ -30,6 +33,13 @@ serve: doc
 		--open-browser \
 		--delay 0 \
 		"$(SOURCEDIR)" "$(BUILDDIR)"
+
+# releasing ####################################################################
+
+.PHONY: bump
+bump:
+	bump2version $(PART)
+	git push --follow-tags
 
 ################################################################################
 
