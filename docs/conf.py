@@ -18,8 +18,11 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinxcontrib.apidoc",
     "myst_parser",
+    "sphinx_last_updated_by_git",
 ]
 source_suffix = [".md", ".rst"]
+# https://github.com/mgeier/sphinx-last-updated-by-git/issues/40
+needs_sphinx = "5.2"
 pygments_style = "solarized-light"
 html_theme = "furo"
 html_last_updated_fmt = "%Y-%m-%dT%H:%M:%S%z"
@@ -47,3 +50,6 @@ myst_enable_extensions = [
 apidoc_module_dir = '../src/souk_data_centre'
 apidoc_separate_modules = True
 apidoc_module_first = True
+
+# https://github.com/mgeier/sphinx-last-updated-by-git/
+git_last_updated_timezone = "Europe/London"

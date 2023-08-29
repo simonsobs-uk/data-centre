@@ -5,6 +5,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "mambaforge-22.9"
+  # https://docs.readthedocs.io/en/latest/build-customization.html#unshallow-git-clone
+  jobs:
+    post_checkout:
+      - git fetch --unshallow || true
 conda:
   environment: environment.yml
 python:
