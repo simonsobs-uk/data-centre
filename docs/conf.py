@@ -1,5 +1,5 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
-project = 'SO:UK Data Centre'
+project = "SO:UK Data Centre"
 author = "SO:UK Collaborators"
 year = "2023"
 copyright = f"{year}, {author}"
@@ -47,7 +47,7 @@ myst_enable_extensions = [
 ]
 
 # https://github.com/sphinx-contrib/apidoc
-apidoc_module_dir = '../src/souk_data_centre'
+apidoc_module_dir = "../src/souk_data_centre"
 apidoc_separate_modules = True
 apidoc_module_first = True
 
