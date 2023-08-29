@@ -36,6 +36,11 @@ Create a file `cat.ini`,
 
 Over here, we use `transfer_input_files` to specify which input files to be copied to the worker nodes. If it is a relative path, it will be the relative path w.r.t. the current directory that you are submitting the job from.
 
+To prepare the file for `transfer_input_files`, let's create `cat.txt` with the content,
+
+```{literalinclude} 4-classad-transfer-files-2/cat.txt
+```
+
 And then submit your job using
 
 ```bash
