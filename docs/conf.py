@@ -1,3 +1,11 @@
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
+project = 'SO:UK Data Centre'
+author = "SO:UK Collaborators"
+year = "2023"
+copyright = f"{year}, {author}"
+del year
+version = "0.1"
+release = "0.1.0"
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
@@ -12,25 +20,11 @@ extensions = [
     "myst_parser",
 ]
 source_suffix = [".md", ".rst"]
-master_doc = "index"
-project = 'SO:UK Data Centre'
-year = "2023"
-author = "SO:UK Collaborators"
-copyright = f"{year}, {author}"
-version = release = "0.1.0"
-
 pygments_style = "solarized-light"
 html_theme = "furo"
+html_last_updated_fmt = "%Y-%m-%dT%H:%M:%S%z"
 
-html_use_smartypants = True
-html_last_updated_fmt = "%b %d, %Y"
-html_split_index = False
-html_short_title = f"{project}-{version}"
-
-napoleon_use_ivar = True
-napoleon_use_rtype = False
-napoleon_use_param = False
-
+# https://myst-parser.readthedocs.io/en/stable/syntax/optional.html
 myst_enable_extensions = [
     "dollarmath",
     "amsmath",
@@ -49,7 +43,7 @@ myst_enable_extensions = [
     "attrs_block",
 ]
 
-# sphinxcontrib.apidoc
+# https://github.com/sphinx-contrib/apidoc
 apidoc_module_dir = '../src/souk_data_centre'
 apidoc_separate_modules = True
 apidoc_module_first = True
