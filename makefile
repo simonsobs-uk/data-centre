@@ -12,7 +12,7 @@ DOC_DEP = $(shell find docs -type f \( -name '*.md' -o -name '*.rst' \)) $(shell
 # documentation ################################################################
 
 .PHONY: all doc epub pdf
-all: doc epub
+all: doc epub pdf
 doc: dist/docs/.sentinel
 epub: dist/docs/epub/SOUKDataCentre.epub
 pdf: dist/docs/latex/soukdatacentre.pdf
