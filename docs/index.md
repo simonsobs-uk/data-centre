@@ -9,6 +9,7 @@ user
 developer
 maintainer
 api/modules
+changelog
 genindex
 modindex
 search
