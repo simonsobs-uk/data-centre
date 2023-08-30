@@ -29,7 +29,7 @@ Then the UNIX command `tail` would *follow* the files listed (which are the `out
 
 As an example, the output would looks something like
 
-```log
+```sh
 ❯ condor_submit example.ini; tail -F hello_world.log hello_world.out hello_world.err
 Submitting job(s).
 1 job(s) submitted to cluster 511.
@@ -37,20 +37,20 @@ Submitting job(s).
 
 which is the stdout from `condor_submit example.ini`. Then
 
-```log
+```sh
 ==> hello_world.log <==
 ```
 
 is the tail command working immediately to follow contents of `hello_world.log`, with the following contents:
 
-```log
+```sh
 000 (511.000.000) 2023-08-29 23:39:35 Job submitted from host: <195.194.109.199:9618?addrs=195.194.109.199-9618+[2001-630-22-d0ff-5054-ff-fe9a-b662]-9618&alias=vm77.tier2.hep.manchester.ac.uk&noUDP&sock=schedd_2377818_f2b3>
 ...
 ```
 
 Then
 
-```log
+```sh
 tail: cannot open ‘hello_world.out’ for reading: No such file or directory
 tail: cannot open ‘hello_world.err’ for reading: No such file or directory
 
@@ -58,7 +58,7 @@ tail: cannot open ‘hello_world.err’ for reading: No such file or directory
 
 is `tail` telling us that `hello_world.out` & `hello_world.err` does not exist yet, as the job hasn't started. `tail` will follow them as soon as they are available. Then `hello_world.log` continues to have more content, indicating its progress:
 
-```log
+```sh
 ==> hello_world.log <==
 040 (511.000.000) 2023-08-29 23:39:35 Started transferring input files
         Transferring to host: <195.194.109.209:9618?addrs=195.194.109.209-9618+[2001-630-22-d0ff-5054-ff-fee9-c3d]-9618&alias=vm75.in.tier2.hep.manchester.ac.uk&noUDP&sock=slot1_4_1883_7e66_41406>
@@ -69,14 +69,14 @@ is `tail` telling us that `hello_world.out` & `hello_world.err` does not exist y
 
 Then
 
-```log
+```sh
 tail: ‘hello_world.out’ has appeared;  following end of new file
 tail: ‘hello_world.err’ has appeared;  following end of new file
 ```
 
 tells us that these files finally appeared (as the job has started). Then
 
-```log
+```sh
 001 (511.000.000) 2023-08-29 23:39:36 Job executing on host: <195.194.109.209:9618?addrs=195.194.109.209-9618+[2001-630-22-d0ff-5054-ff-fee9-c3d]-9618&alias=vm75.in.tier2.hep.manchester.ac.uk&noUDP&sock=startd_1389_5123>
 ...
 
@@ -84,7 +84,7 @@ tells us that these files finally appeared (as the job has started). Then
 
 continues to show more log from `hello_world.log`. This part
 
-```log
+```sh
 ==> hello_world.out <==
 hello world
 
@@ -93,7 +93,7 @@ hello world
 
 Is the content of `hello_world.out` as soon as it appears, where in the end it has the following log:
 
-```log
+```sh
 ==> hello_world.log <==
 006 (511.000.000) 2023-08-29 23:39:36 Image size of job updated: 35
         0  -  MemoryUsage of job (MB)
