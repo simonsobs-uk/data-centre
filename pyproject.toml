@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "souk_data_centre"
-version = "0.11.0"
+version = "0.1.1"
 description = "SO:UK Data Centre documentation."
 license = "BSD-3-Clause"
 keywords = [
