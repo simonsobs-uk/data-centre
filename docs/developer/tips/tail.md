@@ -122,4 +122,4 @@ You will notice that the `tail` process has never ended, as if it is halting. Th
 
 From the content itself, you see `Job terminated of its own accord...` meaning that your job has ended, and you should now press `Ctrl + c` to terminate the `tail` command.
 
-You can also checkout [](#monitor) to see how to monitor the status of your job, and from it you can tell this job has indeed ended.
+You can also checkout [](#monitor-your-jobs) to see how to monitor the status of your job, and from it you can tell this job has indeed ended.

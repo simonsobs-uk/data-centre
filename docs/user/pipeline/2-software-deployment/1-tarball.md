@@ -60,7 +60,7 @@ condor_submit tarball.ini
 
 After waiting for a while as the job finished, you can see what happened by reading the contents of `log`, `output`, and `error` as specified in the ClassAd.
 
-See [](#monitor) to see how to monitor the status of your job. For advance use, use this command instead,
+See [](#monitor-your-jobs) to see how to monitor the status of your job. For advance use, use this command instead,
 
 ```bash
 condor_submit tarball.ini; tail -F tarball.log tarballs.out tarball.err

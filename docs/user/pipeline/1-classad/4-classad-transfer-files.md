@@ -20,7 +20,7 @@ condor_submit repl.ini
 
 After waiting for a while as the job finished, you can see what happened by reading the contents of `log`, `output`, and `error` as specified in the ClassAd.
 
-See [](#monitor) to see how to monitor the status of your job. For advance use, use this command instead,
+See [](#monitor-your-jobs) to see how to monitor the status of your job. For advance use, use this command instead,
 
 ```bash
 condor_submit repl.ini; tail -F repl.log repl-0.out repl-0.err repl-1.out repl-1.err
@@ -57,7 +57,7 @@ condor_submit cat.ini
 
 After waiting for a while as the job finished, you can see what happened by reading the contents of `log`, `output`, and `error` as specified in the ClassAd.
 
-See [](#monitor) to see how to monitor the status of your job. For advance use, use this command instead,
+See [](#monitor-your-jobs) to see how to monitor the status of your job. For advance use, use this command instead,
 
 ```bash
 condor_submit cat.ini; tail -F cat.log cat-0.out cat-0.err cat-1.out cat-1.err

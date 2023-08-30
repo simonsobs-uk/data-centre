@@ -1,4 +1,4 @@
-{#monitor}
+{#monitor-your-jobs}
 # Monitor your jobs
 
 In HTCondor, you can use
