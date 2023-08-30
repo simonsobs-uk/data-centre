@@ -5,9 +5,9 @@
 :maxdepth: 2
 :hidden:
 
-user/onboarding.md
-user/quick-start.md
-user/pipeline.md
+user/onboarding
+user/quick-start
+user/pipeline
 ```
 
 This is intended to be read by typical users following our recommended usage. While it is written for general audiences, some pointers specific to NERSC users will be given to adapt their pipelines at NERSC to the SO:UK Data Centre.

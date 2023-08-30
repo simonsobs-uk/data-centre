@@ -5,9 +5,9 @@
 :numbered:
 :hidden:
 
-user.md
-developer.md
-maintainer.md
+user
+developer
+maintainer
 api/modules
 genindex
 modindex
