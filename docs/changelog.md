@@ -1,5 +1,11 @@
 # Changelog
 
+- v0.1.2: Start writing maintainer guide
+    - documentation enhancements and bug fixes:
+        - add maintainer sections
+    - misc. software related:
+        - fix discrepancies between `environment.yml` and `pyproject.toml`
+        - fix `__version__` in `souk_data_centre`
 - v0.1.1: Start writing developer guide
     - documentation enhancements and bug fixes:
         - add sections on tips, including how to monitor jobs and the use of `tail` to stream real time stdout/stderr.
