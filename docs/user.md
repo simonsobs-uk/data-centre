@@ -1,4 +1,4 @@
-(user)=
+{#user}
 # User guide
 
 ```{toctree}

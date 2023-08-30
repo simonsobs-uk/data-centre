@@ -1,4 +1,4 @@
-(tail)=
+{#tail}
 # Streaming stdout & stderr with tail
 
 When submitting a job in HTCondor (and any other computing facilities), often your job will be run on another node at a later time. If you eager to look at the output (stdout & stderr) as soon as it is running, HTCondor provided a facility to do that together with some UNIX utilities.

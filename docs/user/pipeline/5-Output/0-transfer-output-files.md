@@ -1,4 +1,4 @@
-(0-transfer-output-files)=
+{#0-transfer-output-files}
 # Transfer output files
 
 You can specify this in the ClassAd to transfer output files, for example,

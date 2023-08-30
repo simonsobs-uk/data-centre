@@ -1,4 +1,4 @@
-(vanilla-universe)=
+{#vanilla-universe}
 # Vanilla universe
 
 To request a job in the vanilla universe, create a file `example.ini`,

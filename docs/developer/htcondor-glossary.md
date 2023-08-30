@@ -1,4 +1,4 @@
-(htcondor-glossary)=
+{#htcondor-glossary}
 # HTCondor Glossary
 
 ClassAd
