@@ -53,6 +53,7 @@ python = ">=3.7"
 
 # extras
 coloredlogs = {optional = true, version = "*"}
+bump2version = {optional = true, version = "*"}
 
 # tests
 coverage = { optional = true, version = "*" }
@@ -63,10 +64,14 @@ sphinx = {optional = true, version = "*"}
 myst-parser = {optional = true, version = "*"}
 furo = {optional = true, version = "*"}
 sphinxcontrib-apidoc = {optional = true, version = "*"}
+sphinx-autobuild = {optional = true, version = "*"}
+linkify-it-py = {optional = true, version = "*"}
+sphinx-last-updated-by-git = {optional = true, version = "*"}
 
 [tool.poetry.extras]
 extras = [
     "coloredlogs",
+    "bump2version",
 ]
 tests = [
     "coverage",
@@ -77,6 +82,9 @@ docs = [
     "myst-parser",
     "furo",
     "sphinxcontrib-apidoc",
+    "sphinx-autobuild",
+    "linkify-it-py",
+    "sphinx-last-updated-by-git",
 ]
 
 # [tool.poetry.scripts]
