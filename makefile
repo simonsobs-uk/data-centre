@@ -11,18 +11,18 @@ DOC_DEP = $(shell find docs -type f \( -name '*.md' -o -name '*.rst' \)) $(shell
 
 # documentation ################################################################
 
-.PHONY: all doc epub pdf
+.PHONY: all doc epub
 all: doc epub pdf
 doc: dist/docs/.sentinel
-epub: dist/docs/epub/SOUKDataCentre.epub
+epub: dist/docs/SOUKDataCentre.epub
 pdf: dist/docs/latex/soukdatacentre.pdf
 
 dist/docs/.sentinel: $(DOC_DEP)
 	@$(SPHINXBUILD) -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 	touch $@
-dist/docs.epub: $(DOC_DEP)
+dist/docs/SOUKDataCentre.epub: $(DOC_DEP)
 	@$(SPHINXBUILD) -b epub "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
-dist/docs.pdf: $(DOC_DEP)
+dist/docs/latex/soukdatacentre.pdf: $(DOC_DEP)
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 
 .PHONY: serve
