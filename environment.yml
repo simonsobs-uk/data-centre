@@ -14,5 +14,6 @@ dependencies:
   - myst-parser
   - furo
   - linkify-it-py
+  - bump2version
   - pip:
     - sphinx-last-updated-by-git
