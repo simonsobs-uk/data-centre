@@ -1,2 +1,2 @@
-# data-centre-issue-tracker
-This tracks the issues in the baseline design of the SO:UK Data Centre at Blackett: https://www.blackett.manchester.ac.uk
+# data-centre-documentation
+This repo maintain all the documentation of data centre related services (https://souk-data-centre.readthedocs.io)
