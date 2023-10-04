@@ -1,4 +1,4 @@
-# Output
+# Writing data
 
 ```{toctree}
 :maxdepth: 2
