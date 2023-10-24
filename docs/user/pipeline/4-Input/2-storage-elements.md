@@ -11,7 +11,7 @@ To Transfer the file you need to:
     - `openssl pkcs12 -in yourfile.p12 -clcerts -nokeys -out usercert.pem`
     - `openssl pkcs12 -in yourfile.p12 -nocerts  -out userkey.pem`
 - copy both to the login node and put them into `$HOME/.globus/`
-- run `voms-proxy-init-voms vo.northgrid.ac.uk` to get voms proxy (it will only active for 24 hours)
+- run `voms-proxy-init -voms vo.northgrid.ac.uk` to get voms proxy (it will only active for 24 hours)
 - use gfal tools to access the storage, the base url for northgrid is <protocol://bohr3226.tier2.hep.manchester.ac.uk/dpm/tier2.hep.manchester.ac.uk/home/vo.northgrid.ac.uk>
 - create your own directory trees under the base url
 - gfal tool names follow standard unix tools, e.g `gfal-ls`, `gfal-mkdir`, `gfal-copy`, etc
