@@ -8,7 +8,7 @@ Point the user to [this section](#obtaining-unix-account) and ask them to send t
 
 1. Edit `/home/dthomas/common.yaml` on `vm77`, replace the following `ALL_CAP` variables accordingly,
 
-    ```yml
+    ```yaml
     common::users:
     USER_NAME:
         uid: UID
