@@ -27,3 +27,35 @@ Once submitted, you will receive an email. Once you clicked the link in the emai
 
 Occasionally the application went into a blackhole, feel free to ping the admin there or us if you aren't approved in a couple of days.
 :::
+
+(obtaining-unix-account)=
+## Obtain a UNIX account
+
+Provide the following info and send it to one of us:
+
+1. Your preferred UNIX username. If you don't know, run `echo $USER` in your terminal and copy that.
+2. Your first name and last name, same as the one used above.
+3. Copy your ssh public key(s) to us. For example, you can run the following commands and copy the first available result:
+
+    ```sh
+    cat ~/.ssh/id_ed25519.pub
+    cat ~/.ssh/id_rsa.pub
+    ```
+
+4. (Optional) if you want to use a password, follow the following procedure to generate a hash. *On your local machine* (`vm77`'s `openssh` is too old), enter this line **beginning with a space** (such that this line would not be saved in your history file[^history]),
+
+    ```bash
+    $ openssl passwd -6 -salt $(openssl rand -base64 16)
+    # type the password you want to use in the prompt
+    # and result would look like this:
+    $6$...$...
+    ```
+
+    Copy the resulting string to us.
+
+Then email Robert the location of this file (`/opt/$USER` expanded) and telling him that it is your salted, SHA-512 hashed password.
+
+For maintainers to add this new user, go to [this section](#new-users).
+
+
+[^history]: For this to work, you may need to `setopt HIST_IGNORE_SPACE` first.

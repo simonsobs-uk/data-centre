@@ -4,6 +4,7 @@
 :maxdepth: 2
 :hidden:
 
+maintainer/computing-resources.md
 maintainer/installing
 maintainer/documenting
 maintainer/releasing
