@@ -57,6 +57,7 @@ Create these paths with the corresponding contents below:
 "souk.ac.uk" "voms.gridpp.ac.uk" "15519" "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk" "souk.ac.uk" "24"
 ```
 
+(user-credentials)=
 ## User credentials
 
 This part needed to be done once per machine.
@@ -69,6 +70,7 @@ mv certBundle.p12 "$HOME/.globus/usercred.p12"
 chmod 600 "$HOME/.globus/usercred.p12"
 ```
 
+(creating-a-proxy)=
 ## Creating a proxy
 
 This part needed to be done periodically.
@@ -136,6 +138,7 @@ We omitted the port when gfal is used here, as the default ports are used.
 You can delete files created by others, vice versa. Thing twice before deleting or overwriting. To protect your files, you may use gfal-chmod below.
 :::
 
+(gfal)=
 ### More info
 
 As of writing, the versions of the softwares are
