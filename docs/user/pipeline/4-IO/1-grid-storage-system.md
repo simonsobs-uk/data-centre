@@ -1,9 +1,9 @@
-# Setting up storage elements
+# Setting up access to the grid storage system
 
 You will need to
 
 1. Setup VOMS clients using your grid certificate for authentications, and
-2. uses the gfal tools to access the storage elements.
+2. uses the gfal tools to access the grid storage system.
 
 ## Setting up VOMS Clients
 
@@ -97,9 +97,9 @@ Your proxy is valid until Tue Nov 14 08:45:38 GMT 2023
 
 The path `/tmp/x509up_u$UID` will be useful later. You can also run `voms-proxy-info --all` and see it again in the `path` attributes.
 
-## Accessing the storage elements
+## Accessing the grid storage system
 
-You can now access our storage element at
+You can now access our grid storage system at
 
 - <davs://bohr3226.tier2.hep.manchester.ac.uk:443/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/>, or
 - <root://bohr3226.tier2.hep.manchester.ac.uk:1094/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/>.
