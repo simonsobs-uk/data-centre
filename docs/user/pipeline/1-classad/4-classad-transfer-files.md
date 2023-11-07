@@ -10,6 +10,12 @@ create a file `repl.ini`,
 :language: ini
 ```
 
+and a file `repl.sh`,
+
+```{literalinclude} 4-classad-transfer-files/repl.sh
+:language: sh
+```
+
 This ClassAd involve transferring a script named `repl.sh`, and be default it will be copied to worker nodes.
 
 And then you can submit your job using
