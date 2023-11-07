@@ -2,7 +2,7 @@
 
 You will need to
 
-1. Setup VOMS clients using your grid certificate for authetications, and
+1. Setup VOMS clients using your grid certificate for authentications, and
 2. uses the gfal tools to access the storage elements.
 
 ## Setting up VOMS Clients
