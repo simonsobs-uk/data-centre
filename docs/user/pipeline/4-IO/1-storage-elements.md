@@ -1,4 +1,4 @@
-# Storage elements
+# Setting up storage elements
 
 You will need to
 
