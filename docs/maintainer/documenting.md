@@ -42,6 +42,7 @@ docs
 ├── developer.md
 ├── index.md
 ├── maintainer
+│   ├── computing-resources.md
 │   ├── documenting.md
 │   ├── installing.md
 │   └── releasing.md
@@ -88,14 +89,11 @@ docs
 │   │   │   │   └── mpi.sh
 │   │   │   └── 1-OpenMPI.md
 │   │   ├── 3-MPI-applications.md
-│   │   ├── 4-Input
-│   │   │   ├── 1-librarian.md
-│   │   │   └── 2-storage-elements.md
-│   │   ├── 4-Input.md
-│   │   ├── 5-Output
-│   │   │   ├── 0-transfer-output-files.md
-│   │   │   └── 1-storage-elements.md
-│   │   └── 5-Output.md
+│   │   ├── 4-IO
+│   │   │   ├── 0-transfer-via-ClassAd.md
+│   │   │   ├── 1-grid-storage-system.md
+│   │   │   └── 2-librarian.md
+│   │   └── 4-IO.md
 │   ├── pipeline.md
 │   └── quick-start.md
 └── user.md
