@@ -6,9 +6,12 @@ You will need to
 2. register to a VO,
 3. and obtain a UNIX account.
 
+(obtaining-grid-cert)=
 ## Grid certificate
 
-Go to [UK Certification Authority Portal](https://portal.ca.grid-support.ac.uk/) and obtain a grid certificate.
+Go to [UK Certification Authority Portal](https://portal.ca.grid-support.ac.uk/) and obtain a grid certificate. You will obtain a `certBundle.p12` file which is "an archive file format for storing many cryptography objects as a single file"[^p12]
+
+[^p12]: See [PKCS 12 - Wikipedia](https://en.wikipedia.org/wiki/PKCS_12).
 
 :::{note}
 You may need to use a different website if you are outside UK. TODO: add other countries' links here.
