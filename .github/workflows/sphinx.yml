@@ -28,10 +28,10 @@ jobs:
         python -m pip install --no-dependencies -e .
     - name: Make docs
       run: make doc
-    - name: tarball
-      run: tar -czvf github-pages.tar.gz docs/
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v2
+      inputs:
+        path: dist/docs/
 
   # Deploy job
   deploy:
