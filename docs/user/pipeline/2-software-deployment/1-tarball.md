@@ -41,7 +41,7 @@ create a file `tarball.ini`,
 This ClassAd uses `transfer_input_files` to transfer a tarball from the submit node to the worker node.
 
 :::{warning}
-The path `/opt/simonobservatory/pmpm-20230718-Linux-x86_64-OpenMPI.tar.gz` is provided by us and may be changed over time. Try `ls /opt/simonobservatory` to see available tarballs. File an issue if what you're seeing in the documentation is outdated.
+The path `/opt/simonsobservatory/pmpm-20230718-Linux-x86_64-OpenMPI.tar.gz` is provided by us and may be changed over time. Try `ls /opt/simonsobservatory` to see available tarballs. File an issue if what you're seeing in the documentation is outdated.
 :::
 
 The ClassAd involve a script `tarball.sh`,

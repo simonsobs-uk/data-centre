@@ -13,7 +13,7 @@ Point the user to [this section](#obtaining-unix-account) and ask them to send t
     USER_NAME:
         uid: UID
         comment: FIRST_NAME LAST_NAME
-        groups: simonobservatory
+        groups: simonsobservatory
         home: /home/USER_NAME
         keys:
         - 'ssh-ed25519 KEY_VALUE COMMENT'
