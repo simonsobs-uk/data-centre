@@ -13,7 +13,7 @@ As usual, you can create a proxy using
 voms-proxy-init --voms souk.ac.uk --valid 168:0
 ```
 
-This will creates an Attribute Certificate (AC) to `/tmp/x509up_u$$UID`.
+This will creates an Attribute Certificate (AC) to `/tmp/x509up_u$UID`.
 
 ## Example job
 
@@ -22,7 +22,7 @@ From now on **we assumes you already created a proxy recently and it has not bee
 In the current directory that we are going to submit the job, we will then link the AC to a file here.
 
 ```sh
-ln -s "/tmp/x509up_u$$UID" ac.pem
+ln -s "/tmp/x509up_u$UID" ac.pem
 ```
 
 While this is not necessary, this avoids hardcoding the path towards this file in your ClassAd, making sharing ClassAd with collaborators more reproducible.
