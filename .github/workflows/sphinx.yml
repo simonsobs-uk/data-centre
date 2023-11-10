@@ -30,7 +30,7 @@ jobs:
       run: make doc
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v2
-      inputs:
+      with:
         path: dist/docs/
 
   # Deploy job
