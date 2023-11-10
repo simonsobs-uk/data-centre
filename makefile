@@ -36,10 +36,14 @@ serve: doc
 
 # releasing ####################################################################
 
-.PHONY: bump
+.PHONY: bump opt
 bump:
 	bump2version $(PART)
 	git push --follow-tags
+
+# to be run on vm77 for sharing to other users
+opt:
+	cp -f bin/xrootdfs.sh /opt/simonsobservatory
 
 ################################################################################
 
