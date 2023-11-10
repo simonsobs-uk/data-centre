@@ -1,5 +1,12 @@
 # Changelog
 
+- v0.2.0: Supporting the grid storage system
+    - doc:
+        - add sections on the grid storage systems and refactor the IO sections
+        - add `docs/maintainer/computing-resources.md`
+        - add `docs/user/onboarding.md`
+    - technical:
+        - migrate GitHub Pages to use GitHub Actions
 - v0.1.2: Start writing maintainer guide
     - documentation enhancements and bug fixes:
         - add maintainer sections
