@@ -1,6 +1,6 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 project = "SO:UK Data Centre"
-author = "SO:UK Collaborators"
+author = "Kolen Cheung"
 year = "2023"
 copyright = f"{year}, {author}"
 del year
