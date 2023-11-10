@@ -103,31 +103,35 @@ The path `/tmp/x509up_u$UID` will be useful later. You can also run `voms-proxy-
 
 You can now access our grid storage system at
 
-- <davs://bohr3226.tier2.hep.manchester.ac.uk:443/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/>, or
-- <root://bohr3226.tier2.hep.manchester.ac.uk:1094/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/>.
+- <davs://bohr3226.tier2.hep.manchester.ac.uk:443//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/>, or
+- <root://bohr3226.tier2.hep.manchester.ac.uk:1094//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/>.
+
+:::{warning}
+Notice the double slash in `...ac.uk:...//dpm/...`. If a single slash is used, some tools might fail.
+:::
 
 For example, to see what's inside,
 
 ```bash
-gfal-ls -alH --full-time davs://bohr3226.tier2.hep.manchester.ac.uk/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/
+gfal-ls -alH --full-time davs://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/
 # or
-gfal-ls -alH --full-time root://bohr3226.tier2.hep.manchester.ac.uk/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/
+gfal-ls -alH --full-time root://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/
 ```
 
 And to make a directory there,
 
 ```bash
-gfal-mkdir davs://bohr3226.tier2.hep.manchester.ac.uk/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
+gfal-mkdir davs://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
 # or
-gfal-mkdir root://bohr3226.tier2.hep.manchester.ac.uk/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
+gfal-mkdir root://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
 ```
 
 To delete it,
 
 ```bash
-gfal-rm -r davs://bohr3226.tier2.hep.manchester.ac.uk/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
+gfal-rm -r davs://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
 # or
-gfal-rm -r root://bohr3226.tier2.hep.manchester.ac.uk/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
+gfal-rm -r root://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
 ```
 
 :::{note}

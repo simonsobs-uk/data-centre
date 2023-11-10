@@ -52,7 +52,7 @@ condor_submit gfal.ini; tail -F gfal.log gfal.out gfal.err
 After the job finished, you can check your output files copied to the grid storage system, like so
 
 ```sh
-gfal-ls davs://bohr3226.tier2.hep.manchester.ac.uk/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/$USER/
-gfal-cat davs://bohr3226.tier2.hep.manchester.ac.uk/dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/$USER/hello-davs.txt
+gfal-ls davs://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/$USER/
+gfal-cat davs://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/$USER/hello-davs.txt
 ...
 ```
