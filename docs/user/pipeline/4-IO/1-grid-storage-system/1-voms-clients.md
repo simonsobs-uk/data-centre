@@ -1,3 +1,4 @@
+(setup-voms-clients)=
 # Setting up VOMS Clients
 
 If you work on machines supported by us, you can skip this part. This part needed to be done once per machine.
