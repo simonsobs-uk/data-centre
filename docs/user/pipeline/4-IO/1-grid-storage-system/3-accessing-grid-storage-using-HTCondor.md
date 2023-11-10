@@ -29,13 +29,13 @@ While this is not necessary, this avoids hardcoding the path towards this file i
 
 Now, in `gfal.ini`, we set it up to copy this `ac.pem` to the worker node:
 
-```{literalinclude} 1-grid-storage-system-2/gfal.ini
+```{literalinclude} 3-accessing-grid-storage-using-HTCondor/gfal.ini
 :language: ini
 ```
 
 And in `gfal.sh`, we use `export X509_USER_PROXY=ac.pem` to inform where our AC is:
 
-```{literalinclude} 1-grid-storage-system-2/gfal.sh
+```{literalinclude} 3-accessing-grid-storage-using-HTCondor/gfal.sh
 :language: sh
 ```
 
