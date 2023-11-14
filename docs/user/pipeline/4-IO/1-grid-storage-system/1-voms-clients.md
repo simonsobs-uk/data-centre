@@ -1,7 +1,26 @@
+# Setting up Grid Community Toolkit (GCT) (Under construction)
+
+:::{warning}
+Work in-progress. For now, instruction to access the grid storage system on unsupported machines are not complete.
+:::
+
+To authenticate your machine to the grid, you need to
+
+```bash
+# Arch Linux from AUR using yay
+yay -S gct
+```
+
+Requesting a host certificate for your machine, go to <https://portal.ca.grid-support.ac.uk/cert_owner/requestHostCert>.
+
 (setup-voms-clients)=
 # Setting up VOMS Clients
 
 If you work on machines supported by us, you can skip this part. This part needed to be done once per machine.
+
+:::{warning}
+Work in-progress. For now, instruction to access the grid storage system on unsupported machines are not complete.
+:::
 
 ## Installing the clients
 
@@ -12,6 +31,8 @@ You would need to install VOMS Clients by following the instruction in the [VOMS
 sudo yum install voms-clients-java
 # Debian
 sudo apt-get install voms-clients3
+# Arch Linux from AUR using yay
+yay -S voms-clients
 ```
 
 ## Configuring VOMS trust anchors
