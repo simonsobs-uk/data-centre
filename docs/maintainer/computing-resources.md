@@ -26,6 +26,7 @@ Point the user to [this section](#obtaining-unix-account) and ask them to send t
     For `UID`, increments according to the list. Just make sure it has not been used.
 
     For `sudo` groups, obviously only grant those you want them to have sudo privillege.
+    :::
 
 2. Tell Robert to update.
 
