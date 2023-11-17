@@ -13,7 +13,7 @@ This project has a few major components:
 
 ### Using `pip`
 
-```bash
+```sh
 python -m pip install .
 # or if you want to install in editable mode
 python -m pip install -e .
@@ -27,13 +27,13 @@ This is the method used to build the documentation here using Continuous Integra
 
     A one-liner to install `mamba` to `"$HOME/.mambaforge"` is provided:
 
-    ```bash
+    ```sh
     curl -L https://github.com/ickc/bootstrapping-os-environments/raw/master/install/mamba.sh | bash
     ```
 
 2. Install the environment
 
-    ```bash
+    ```sh
     mamba env create -f environment.yml
     # or using conda
     conda env create -f environment.yml
@@ -41,13 +41,13 @@ This is the method used to build the documentation here using Continuous Integra
 
 3. Activating the environment
 
-    ```bash
+    ```sh
     conda activate soukdc
     ```
 
 4. Install this project
 
-    ```bash
+    ```sh
     python -m pip install --no-dependencies .
     # or if you want to install in editable mode
     python -m pip install --no-dependencies -e .

@@ -9,7 +9,7 @@ To request an interactive job in the vanilla universe, create a file `example.in
 
 And then submit your job using
 
-```bash
+```sh
 condor_submit -i example.ini
 ```
 

@@ -21,7 +21,7 @@ Notice the double slash in `...ac.uk:...//dpm/...`. If a single slash is used, s
 
 For example, to see what's inside,
 
-```bash
+```sh
 gfal-ls -alH --full-time davs://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/
 # or
 gfal-ls -alH --full-time root://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/
@@ -29,7 +29,7 @@ gfal-ls -alH --full-time root://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.h
 
 And to make a directory there,
 
-```bash
+```sh
 gfal-mkdir davs://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
 # or
 gfal-mkdir root://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
@@ -37,7 +37,7 @@ gfal-mkdir root://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.
 
 To delete it,
 
-```bash
+```sh
 gfal-rm -r davs://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
 # or
 gfal-rm -r root://bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk/testing
@@ -115,7 +115,7 @@ Some of the commands mimics corresponding POSIX commands:
 
 Check their respective man pages or help string for more information and see available options. For example, run
 
-```bash
+```sh
 man gfal-ls
 gfal-ls -h
 ```

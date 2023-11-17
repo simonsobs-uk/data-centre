@@ -54,7 +54,7 @@ Here you see that the tarball is unarchived to `/tmp`, and then the conda enviro
 
 And then you can submit your job using
 
-```bash
+```sh
 condor_submit tarball.ini
 ```
 
@@ -62,7 +62,7 @@ After waiting for a while as the job finished, you can see what happened by read
 
 See [](#monitor-your-jobs) to see how to monitor the status of your job. For advance use, use this command instead,
 
-```bash
+```sh
 condor_submit tarball.ini; tail -F tarball.log tarballs.out tarball.err
 ```
 

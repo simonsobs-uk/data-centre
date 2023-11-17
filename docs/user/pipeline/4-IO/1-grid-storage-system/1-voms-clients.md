@@ -6,7 +6,7 @@ Work in-progress. For now, instruction to access the grid storage system on unsu
 
 To authenticate your machine to the grid, you need to
 
-```bash
+```sh
 # Arch Linux from AUR using yay
 yay -S gct
 ```
@@ -26,7 +26,7 @@ Work in-progress. For now, instruction to access the grid storage system on unsu
 
 You would need to install VOMS Clients by following the instruction in the [VOMS Clients guide](https://italiangrid.github.io/voms/documentation/voms-clients-guide/3.0.5/#installing-the-clients-). The currently supported OS is either RHEL 6/7 or Debian 6 as of writing:
 
-```bash
+```sh
 # RHEL
 sudo yum install voms-clients-java
 # Debian
@@ -79,7 +79,7 @@ This part needed to be done once per machine.
 
 You need to have your grid certificate `certBundle.p12` ready that you obtained from [this section](#obtaining-grid-cert). Then run
 
-```bash
+```sh
 mkdir -p "$HOME/.globus/"
 mv certBundle.p12 "$HOME/.globus/usercred.p12"
 chmod 600 "$HOME/.globus/usercred.p12"
@@ -90,7 +90,7 @@ chmod 600 "$HOME/.globus/usercred.p12"
 
 This part needed to be done periodically.
 
-```bash
+```sh
 voms-proxy-init --voms souk.ac.uk --valid 168:0
 ```
 

@@ -48,7 +48,7 @@ Provide the following info and send it to one of us:
 
 4. (Optional) if you want to use a password, follow the following procedure to generate a hash. *On your local machine* (`vm77`'s `openssh` is too old), enter this line **beginning with a space** (such that this line would not be saved in your history file[^history]),
 
-    ```bash
+    ```console
     $ openssl passwd -6 -salt $(openssl rand -base64 16)
     # type the password you want to use in the prompt
     # and result would look like this:

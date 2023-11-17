@@ -11,7 +11,7 @@ rm -f /tmp/test
 
 And it can also be used interactively, which provides a POSIX filesystem-like experience:
 
-```bash
+```console
 # this command enters an interactive mode
 ❯ xrdfs bohr3226.tier2.hep.manchester.ac.uk 
 # how you can ls

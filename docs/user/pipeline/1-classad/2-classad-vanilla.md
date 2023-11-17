@@ -9,7 +9,7 @@ To request a job in the vanilla universe, create a file `example.ini`,
 
 And then submit your job using
 
-```bash
+```sh
 condor_submit example.ini
 ```
 
@@ -17,7 +17,7 @@ After waiting for a while as the job finished, you can see what happened by read
 
 See [](#monitor-your-jobs) to see how to monitor the status of your job. For advance use, use this command instead,
 
-```bash
+```sh
 condor_submit example.ini; tail -F hello_world.log hello_world.out hello_world.err
 ```
 

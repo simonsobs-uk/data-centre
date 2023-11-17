@@ -43,7 +43,7 @@ Note that any gfal commands from [this section](#gfal) can be used so that you c
 
 Lastly, submit and see what happens[^tail]
 
-```bash
+```sh
 condor_submit gfal.ini; tail -F gfal.log gfal.out gfal.err
 ```
 
