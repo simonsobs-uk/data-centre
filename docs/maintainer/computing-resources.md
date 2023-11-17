@@ -1,8 +1,10 @@
 (computing-resources)=
 # Managing and Maintaining Computing Resources
 
+## New accounts
+
 (new-users)=
-## Adding new users
+### Adding new users on the submit node `vm77`
 
 Point the user to [this section](#obtaining-unix-account) and ask them to send those info to you.
 
@@ -30,7 +32,8 @@ Point the user to [this section](#obtaining-unix-account) and ask them to send t
 
 2. Tell Robert to update.
 
-## Register as a new content manager (CVMFS)
+(content-manager-registration)=
+### Register as a new content manager (CVMFS)
 
 1. Run `ssh northgridsgm@cvmfs-upload01.gridpp.rl.ac.uk` from any computer. Then you'd see something like
 
@@ -50,3 +53,19 @@ Point the user to [this section](#obtaining-unix-account) and ask them to send t
 - The “voperson_id” from your account in EGI CheckIn: ...@egi.eu
 
 4. Wait for email from <lcg-support@gridpp.rl.ac.uk> when the admin added you to the service.
+
+## Software deployments
+
+### Publishing to CVMFS
+
+See [above](#content-manager-registration) if you haven't applied for the role of content manager yet.
+
+Then
+
+```sh
+ssh northgridsgm@cvmfs-upload01.gridpp.rl.ac.uk
+```
+
+Then starts to write something in `~/cvmfs_repo/simonsobservatory`. What you write will immediately be available at `/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory` on this publishing node. But it will only be synchronized to other sites with a time scale of around 1 hour.
+
+On `vm77`, check if you see your stuffs is in `/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory` already, if so, you can start to submit jobs that reads from there.
