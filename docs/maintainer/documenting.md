@@ -29,7 +29,7 @@ If a new file is not included in a `toctree`, you will see a warning when buildi
 
 The following is the tree structure as of writing. It borrows a subpage concept from Notion. For example, `maintainer.md` has an accompanying `maintainer/` directory, which includes some more source files such as `documenting.md`. This indicates that `documenting.md` "belongs" to (or is a subpage of) `maintainer.md`.
 
-```sh
+```console
 docs
 ├── changelog.md
 ├── conf.py
