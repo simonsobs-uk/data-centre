@@ -12,24 +12,27 @@ DOC_DEP = $(shell find docs -type f \( -name '*.md' -o -name '*.rst' \)) $(shell
 # documentation ################################################################
 
 .PHONY: all doc epub
-all: doc epub pdf man html
-doc: dist/docs/.sentinel
-epub: dist/docs/SOUKDataCentre.epub
-pdf: dist/docs/latex/soukdatacentre.pdf
-man: dist/docs/soukdatacentre.1
-html: dist/docs/index.html
+all: doc epub pdf man txt html
+doc: $(BUILDDIR)/dirhtml/.sentinel
+epub: $(BUILDDIR)/epub/SOUKDataCentre.epub
+pdf: $(BUILDDIR)/latexpdf/latex/soukdatacentre.pdf
+man: $(BUILDDIR)/man/soukdatacentre.1
+txt: $(BUILDDIR)/singlehtml/index.txt
+html: $(BUILDDIR)/singlehtml/index.html
 
-dist/docs/.sentinel: $(DOC_DEP)
-	@$(SPHINXBUILD) -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+$(BUILDDIR)/dirhtml/.sentinel: $(DOC_DEP)
+	@$(SPHINXBUILD) -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)/dirhtml" $(SPHINXOPTS)
 	touch $@
-dist/docs/SOUKDataCentre.epub: $(DOC_DEP)
-	@$(SPHINXBUILD) -b epub "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
-dist/docs/latex/soukdatacentre.pdf: $(DOC_DEP)
-	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
-dist/docs/soukdatacentre.1: $(DOC_DEP)
-	@$(SPHINXBUILD) -b man "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
-dist/docs/index.html: $(DOC_DEP)
-	@$(SPHINXBUILD) -b singlehtml "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+$(BUILDDIR)/epub/SOUKDataCentre.epub: $(DOC_DEP)
+	@$(SPHINXBUILD) -b epub "$(SOURCEDIR)" "$(BUILDDIR)/epub" $(SPHINXOPTS)
+$(BUILDDIR)/latexpdf/latex/soukdatacentre.pdf: $(DOC_DEP)
+	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)/latexpdf" $(SPHINXOPTS)
+$(BUILDDIR)/man/soukdatacentre.1: $(DOC_DEP)
+	@$(SPHINXBUILD) -b man "$(SOURCEDIR)" "$(BUILDDIR)/man" $(SPHINXOPTS)
+$(BUILDDIR)/singlehtml/index.html: $(DOC_DEP)
+	@$(SPHINXBUILD) -b singlehtml "$(SOURCEDIR)" "$(BUILDDIR)/singlehtml" $(SPHINXOPTS)
+$(BUILDDIR)/singlehtml/index.txt: $(BUILDDIR)/singlehtml/index.html
+	pandoc -f html -t plain $< -o $@
 
 .PHONY: serve
 serve: doc
