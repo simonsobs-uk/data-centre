@@ -30,7 +30,7 @@ Then the UNIX command `tail` would *follow* the files listed (which are the `out
 As an example, the output would looks something like
 
 ```console
-❯ condor_submit example.ini; tail -F hello_world.log hello_world.out hello_world.err
+$ condor_submit example.ini; tail -F hello_world.log hello_world.out hello_world.err
 Submitting job(s).
 1 job(s) submitted to cluster 511.
 ```

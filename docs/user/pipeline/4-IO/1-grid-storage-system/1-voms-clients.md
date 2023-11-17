@@ -101,7 +101,7 @@ The Attribute Certificate (AC) is configured with a maximum validity of 168 hour
 Example output after running this command will be:
 
 ```
-❯ voms-proxy-init --voms souk.ac.uk --valid 168:0
+$ voms-proxy-init --voms souk.ac.uk --valid 168:0
 Enter GRID pass phrase for this identity:
 Contacting voms03.gridpp.ac.uk:15519 [/C=UK/O=eScience/OU=Imperial/L=Physics/CN=voms03.gridpp.ac.uk] "souk.ac.uk"...
 Remote VOMS server contacted succesfully.
