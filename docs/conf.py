@@ -26,6 +26,7 @@ needs_sphinx = "5.2"
 pygments_style = "solarized-light"
 html_theme = "furo"
 html_last_updated_fmt = "%Y-%m-%dT%H:%M:%S%z"
+latex_engine = "lualatex"
 
 # https://myst-parser.readthedocs.io/en/stable/syntax/optional.html
 myst_enable_extensions = [
