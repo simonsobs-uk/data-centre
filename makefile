@@ -17,7 +17,7 @@ doc: $(BUILDDIR)/dirhtml/.sentinel
 epub: $(BUILDDIR)/epub/SOUKDataCentre.epub
 pdf: $(BUILDDIR)/latexpdf/latex/soukdatacentre.pdf
 man: $(BUILDDIR)/man/soukdatacentre.1
-txt: $(BUILDDIR)/singlehtml/index.txt
+txt: $(BUILDDIR)/singlehtml/soukdatacentre.txt
 html: $(BUILDDIR)/singlehtml/index.html
 
 $(BUILDDIR)/dirhtml/.sentinel: $(DOC_DEP)
@@ -31,7 +31,7 @@ $(BUILDDIR)/man/soukdatacentre.1: $(DOC_DEP)
 	@$(SPHINXBUILD) -b man "$(SOURCEDIR)" "$(BUILDDIR)/man" $(SPHINXOPTS)
 $(BUILDDIR)/singlehtml/index.html: $(DOC_DEP)
 	@$(SPHINXBUILD) -b singlehtml "$(SOURCEDIR)" "$(BUILDDIR)/singlehtml" $(SPHINXOPTS)
-$(BUILDDIR)/singlehtml/index.txt: $(BUILDDIR)/singlehtml/index.html
+$(BUILDDIR)/singlehtml/soukdatacentre.txt: $(BUILDDIR)/singlehtml/index.html
 	pandoc -f html -t plain $< -o $@
 
 .PHONY: serve
