@@ -1,7 +1,7 @@
 WEBVTT
 
 00:00:00.000 --> 00:00:05.760
- Okay, Colon, please, please take it away.
+ Okay, Kolen, please, please take it away.
 
 00:00:05.760 --> 00:00:15.080
  Hello, oh, wait a second.
@@ -28,7 +28,7 @@ WEBVTT
  Okay, so I will start with a big picture.
 
 00:00:41.760 --> 00:00:45.720
- So basically, this is an introduction to the SUK data center.
+ So basically, this is an introduction to the SO:UK Data Centre.
 
 00:00:45.720 --> 00:00:48.300
  And I will start with a big picture.
@@ -43,7 +43,7 @@ WEBVTT
  And this is according to the...
 
 00:00:57.080 --> 00:01:02.200
- The so-called European-grade infrastructure, high-trivial computing is a computer computing
+ The so-called European Grid Infrastructure (EGI), High Throughput Computing (HTC) is a computer computing
 
 00:01:02.200 --> 00:01:07.880
  paradigm that focuses on the efficient execution of a large number of loosely coupled tasks.
@@ -79,7 +79,7 @@ WEBVTT
  HPC tightly coupled, and then interconnect low bandwidth, let's say 10 gigabit ethernet,
 
 00:01:56.840 --> 00:02:03.400
- versus high bandwidth low latency like infinite band interconnects. And then in terms of
+ versus high bandwidth low latency like InfiniBand interconnects. And then in terms of
 
 00:02:03.400 --> 00:02:10.680
  computational capability, HTC is a subset of HPC in the sense that any workflow that you can execute
@@ -97,7 +97,7 @@ WEBVTT
  expensive. You need to spend more money on interconnects, et cetera. So for example,
 
 00:02:36.520 --> 00:02:42.760
- in SLUK data center at a point like we try to estimate how much it will cost for us to build
+ in SO:UK Data Centre at a point like we try to estimate how much it will cost for us to build
 
 00:02:42.760 --> 00:02:49.560
  a high performance, only the storage system for the capacity we need, right? So we need to spend
@@ -118,7 +118,7 @@ WEBVTT
  supercomputer on earth is HPC, basically. So homogeneity, HTC is very forgiving in a hetero
 
 00:03:26.120 --> 00:03:33.560
- homogeneous nodes, which is what we are going to have in SOE UK data center, but HPC is highly
+ homogeneous nodes, which is what we are going to have in SO:UK Data Centre, but HPC is highly
 
 00:03:33.560 --> 00:03:40.880
  homogeneous. MPI support in HTC often is afterthoughts. In HPC, often it's first class or
@@ -151,7 +151,7 @@ WEBVTT
  something called so-called Cosmoglobe that some of you already know. So basically it's a full Bayesian
 
 00:04:41.960 --> 00:04:49.240
- analysis on CMB data, which requires you to load all the TLD in memory, including all the different
+ analysis on CMB data, which requires you to load all the TOD in memory, including all the different
 
 00:04:49.240 --> 00:04:55.240
  frequencies of maps, right? So I estimated basically, if you want to do this kind of analysis
@@ -172,16 +172,16 @@ WEBVTT
  into memory. Then for example, this kind of analysis is done in Planck and will be done in
 
 00:05:24.040 --> 00:05:33.240
- SLS mapmaking. So these are more like HPC kind of workload. So for naive or sometimes called filter
+ SO LAT mapmaking. So these are more like HPC kind of workload. So for naive or sometimes called filter
 
 00:05:33.240 --> 00:05:42.040
- beam or bias mapmaking, this suits the HTC kind of workflow very well because of something called
+ bin or biased mapmaking, this suits the HTC kind of workflow very well because of something called
 
 00:05:42.040 --> 00:05:48.520
  the MapReduce paradigm. So each mapmaking is a single, can be, can be a single, very small,
 
 00:05:48.520 --> 00:05:53.400
- I mean, it takes a small chunk of TLD and make a single map out there without
+ I mean, it takes a small chunk of TOD and make a single map out there without
 
 00:05:53.400 --> 00:05:57.480
  involving any other data. So it's well suited for HTC kind of workflow.
@@ -193,25 +193,25 @@ WEBVTT
  Yes. So the thing I want to mention in this slide is actually it has been demonstrated in CMB that
 
 00:06:10.520 --> 00:06:18.120
- the HTC kind of workflow already is well suited in SPT3G. So they have done, they actually released
+ the HTC kind of workflow already is well suited in SPT-3G. So they have done, they actually released
 
 00:06:18.120 --> 00:06:24.760
  a paper that I tried to cite here. I put it in the last slide actually. And then they demonstrated
 
 00:06:24.760 --> 00:06:31.480
- they can use the open science grid in the US to use HTC kind of resource to complete the analysis
+ they can use the Open Science Grid (OSG) in the US to use HTC kind of resource to complete the analysis
 
 00:06:31.480 --> 00:06:37.640
- of SPT3G, right? So there's something already demonstrated to work well. And the next slide is,
+ of SPT-3G, right? So there's something already demonstrated to work well. And the next slide is,
 
 00:06:37.640 --> 00:06:40.200
- I just call that the nurse problem.
+ I just call that the NERSC problem.
 
 00:06:40.200 --> 00:06:54.180
- So, you know, you probably, most of you has already received this email in early this year, talking about like the allocation of nurse resources to the CMB community, right?
+ So, you know, you probably, most of you has already received this email in early this year, talking about like the allocation of NERSC resources to the CMB community, right?
 
 00:06:54.180 --> 00:07:05.340
- So the way I summarize the situation is that typically, if you want to use nurse resource, you need to make a certain kind of request, right, to request some kind of allocation.
+ So the way I summarize the situation is that typically, if you want to use NERSC resource, you need to make a certain kind of request, right, to request some kind of allocation.
 
 00:07:05.340 --> 00:07:10.020
  But this is done by someone else for us already for like 25 years.
@@ -220,7 +220,7 @@ WEBVTT
  They routinely, every year, they dedicate 1% of the resources to the whole CMB community.
 
 00:07:16.220 --> 00:07:24.640
- And then it's also very generously, any CMB-like researcher want to have, I mean, use that system.
+ And then it's also very generously, any CMB-like researcher want to have, I mean, use that system,
 
 00:07:24.640 --> 00:07:29.640
  We are allocated 1% of that whole CMB pool of resources.
@@ -229,7 +229,7 @@ WEBVTT
  It has been working well.
 
 00:07:32.920 --> 00:07:35.840
- This model has been working well until very late.
+ This model has been working well until very lately.
 
 00:07:35.840 --> 00:07:41.200
  Basically, it's because of the so-called the end of the Moore's law, right?
@@ -247,7 +247,7 @@ WEBVTT
  But you can see the other lines basically telling you that how the CMB data sets are growing.
 
 00:08:01.740 --> 00:08:05.800
- And it hasn't stopped growing by that.
+ And it hasn't stopped growing by that
 
 00:08:05.800 --> 00:08:12.060
  trend, right? So it means that the amount of data we are having is increasingly overgrowing the
@@ -259,25 +259,25 @@ WEBVTT
  are facing. So for example, in this year, we know that about 0.1% of the whole NERSC is allocated
 
 00:08:28.940 --> 00:08:36.800
- to the SO analysis, right? So if you take the amount of flops you have for the whole NERSC
+ to the SO analysis, right? So if you take the amount of FLOPS you have for the whole NERSC
 
 00:08:36.800 --> 00:08:42.160
- machine multiplied by that number, that's equivalent to a 0.1 platform machine, basically.
+ machine multiplied by that number, that's equivalent to a 0.1 PFLOPS machine, basically.
 
 00:08:42.160 --> 00:08:46.800
- So if you have a 0.1 platform machine running like for full time for a year, that is the amount
+ So if you have a 0.1 PFLOPS machine running like for full time for a year, that is the amount
 
 00:08:46.800 --> 00:08:53.040
- of compute time you have. And by my estimation, SO UK data center will have basically the same
+ of compute time you have. And by my estimation, SO:UK data centre will have basically the same
 
 00:08:53.040 --> 00:08:58.680
- similar order of material amount of platform. So it's an equally capable
+ similar order of magnitude amount of PFLOPS. So it's an equally capable
 
 00:08:58.680 --> 00:08:58.920
  machine.
 
 00:08:58.920 --> 00:09:05.900
- for that allocation. And SO UK data center is allocated within Black Hat, and which is like
+ for that allocation. And SO:UK data centre is allocated within Blackett, and which is like
 
 00:09:05.900 --> 00:09:12.980
  10 times higher, meaning that the amount of burst throughput you can get when you have like you have
@@ -289,25 +289,25 @@ WEBVTT
  1000 times as much. Here is about 10 times as much. So this slide I call it HTC for SATs. So I
 
 00:09:25.720 --> 00:09:28.660
- actually mentioned it here. So Naive Memorandum of King,
+ actually mentioned it here. So naïve mapmaking
 
 00:09:28.660 --> 00:09:32.500
- is well-suited for HTC Card workflow
+ is well-suited for HTC kind of workflow
 
 00:09:32.500 --> 00:09:34.520
- because of the map-reduced paradigm.
+ because of the MapReduce paradigm.
 
 00:09:34.520 --> 00:09:37.480
  And it has been demonstrated to use the Open Science Grid,
 
 00:09:37.480 --> 00:09:39.420
- which is very similar to Black Hat here.
+ which is very similar to Blackett here.
 
 00:09:39.420 --> 00:09:45.540
- And SUK Data Center is funded to perform SO sets analysis.
+ And SO:UK Data Centre is funded to perform SO SATs analysis.
 
 00:09:45.540 --> 00:09:50.880
- And located from within Black Hat is HTC Card workflow,
+ And located from within Blackett is an HTC kind of workflow,
 
 00:09:50.880 --> 00:09:52.320
  and it is funded for eight years.
@@ -322,7 +322,7 @@ WEBVTT
  So now I'm going to switch to the next session.
 
 00:10:08.720 --> 00:10:12.040
- So it's basically I'm soft-launch training the SUK Data Center.
+ So it's basically I'm soft-launching the SO:UK Data Centre.
 
 00:10:12.040 --> 00:10:14.840
  What I mean is it's the first time we are presenting
@@ -331,13 +331,13 @@ WEBVTT
  how you can use our resources here.
 
 00:10:20.080 --> 00:10:23.260
- So what is the SUK Data Center first?
+ So what is the SO:UK Data Centre first?
 
 00:10:23.260 --> 00:10:28.000
- So physically and infrastructurally, it's located from within Black Hat.
+ So physically and infrastructurally, it's located from within Blackett.
 
 00:10:28.000 --> 00:10:32.220
- And which amounts to about 10% of the Black Hat resources
+ And which amounts to about 10% of the Blackett resources
 
 00:10:32.220 --> 00:10:35.080
  in terms of number of CPUs.
@@ -349,13 +349,13 @@ WEBVTT
  And in terms of interacting with the computational resources,
 
 00:10:45.380 --> 00:10:49.860
- we are unique in the sense that typical Black Hat users
+ we are unique in the sense that typical Blackett users
 
 00:10:49.860 --> 00:10:52.400
  are not using the resources like that.
 
 00:10:52.400 --> 00:10:55.480
- They submit their jobs via something called Divide UI,
+ They submit their jobs via something called DiracUI,
 
 00:10:55.480 --> 00:10:57.040
  which we are not going to deal with.
@@ -364,34 +364,34 @@ WEBVTT
  And we are going to log into a certain log-in nodes
 
 00:11:00.880 --> 00:11:04.000
- or call submit nodes and use HTConda directly.
+ or call submit nodes and use HTCondor directly.
 
 00:11:04.000 --> 00:11:09.700
- So the SUK Data Center documentation is written specifically for this
+ So the SO:UK Data Centre documentation is written specifically for this
 
 00:11:09.700 --> 00:11:14.640
- because no other Black Hat users has been using the resources like this.
+ because no other Blackett users has been using the resources like this,
 
 00:11:14.640 --> 00:11:20.860
- And HTConda itself, so I'm just trying to introduce it a little bit.
+ and HTCondor itself. So I'm just trying to introduce it a little bit.
 
 00:11:20.860 --> 00:11:25.100
  In a certain sense, you can say it's an inferior job manager
 
 00:11:25.100 --> 00:11:27.020
- comparing to the rest of the Black Hat users.
+ comparing to the rest of the Blackett users.
 
 00:11:27.020 --> 00:11:28.740
- So the one that you are already used to learn
+ So the one that you are already used to launch,
 
 00:11:28.740 --> 00:11:32.660
  in handling massively parallel applications, right?
 
 00:11:32.660 --> 00:11:36.040
- But we are not doing that in SETS and others.
+ But we are not doing that in SATs and others.
 
 00:11:36.040 --> 00:11:39.340
- So it can be viewed as learn-like in many aspects.
+ So it can be viewed as SLURM-like in many aspects.
 
 00:11:39.340 --> 00:11:41.380
  So basically, it's job manager, you submit jobs,
@@ -400,7 +400,7 @@ WEBVTT
  and it will try to allocate resources for it to run.
 
 00:11:43.900 --> 00:11:48.200
- However, other design choices in Black Hat also contributes
+ However, other design choices in Blackett also contributes
 
 00:11:48.200 --> 00:11:52.280
  to other differences that you might have been experiencing
@@ -433,7 +433,7 @@ WEBVTT
  So let me try to click, just click this thing.
 
 00:12:17.300 --> 00:12:21.140
- So this is a link to the SUK Data Center documentation.
+ So this is a link to the SO:UK Data Centre documentation.
 
 00:12:21.140 --> 00:12:26.800
  And for example, some of them is very straightforward.
@@ -454,7 +454,7 @@ WEBVTT
  and then try to follow the example
 
 00:12:36.360 --> 00:12:40.560
- to start to be a user of our data center.
+ to start to be a user of our data centre.
 
 00:12:40.560 --> 00:12:42.240
  And then there's a quick start page
@@ -481,19 +481,19 @@ WEBVTT
  it's really that short. So you need some way of defining your job configuration. At NERSC,
 
 00:13:11.640 --> 00:13:18.920
- you have something called, I forgot, BERS script. They call it BERS script, which has some
+ you have something called, I forgot, batch script. They call it batch script, which has some
 
 00:13:18.920 --> 00:13:24.280
- special Slurm command on the top of your script, right? So here, we have something called class
+ special SLURM command on the top of your script, right? So here, we have something called ClassAd.
 
 00:13:24.280 --> 00:13:29.480
- add. You write that job configuration, you submit that to the scheduler, and it will try to allocate
+ You write that job configuration, you submit that to the scheduler, and it will try to allocate
 
 00:13:29.480 --> 00:13:35.240
  the resource. And within that job, then you need to bootstrap a certain software environment.
 
 00:13:35.240 --> 00:13:41.400
- You need to load the environment that has Toast, for example, in order to run America using Toast.
+ You need to load the environment that has TOAST, for example, in order to run a mapmaker using TOAST.
 
 00:13:41.400 --> 00:13:49.320
  And then, optionally, so depending if your application are using MPI or not,
@@ -502,19 +502,19 @@ WEBVTT
  then you can try to launch MPI applications. But as I have briefly mentioned before,
 
 00:13:53.880 --> 00:14:06.880
- NPR is not a first-class thing in HTConda, so I provided a special WAPR basically trying to launch a parallel job in something called "parallel universe" in their terminology.
+ MPI is not a first-class thing in HTCondor, so I provided a special wrapper basically trying to launch a parallel job in something called "parallel universe" in their terminology.
 
 00:14:06.880 --> 00:14:10.880
- And with that WAPR, you can launch an NPR job, which we are going to see very soon.
+ And with that wrapper, you can launch an MPI job, which we are going to see very soon.
 
 00:14:10.880 --> 00:14:13.880
  And then lastly, you want to do some I/O, right?
 
 00:14:13.880 --> 00:14:22.880
- So once you have your software, you launch an NPR application, maybe you read in some data, and then it is going to write some data.
+ So once you have your software, you launch an MPI application, maybe you read in some data, and then it is going to write some data.
 
 00:14:22.880 --> 00:14:30.880
- Specifically when you're writing data here at BlackHat, because it's part of the grid, there's something called the grid storage system.
+ Specifically when you're writing data here at Blackett, because it's part of the grid, there's something called the grid storage system.
 
 00:14:30.880 --> 00:14:35.880
  So we are also going to see how it's going to work over there.
@@ -535,7 +535,7 @@ WEBVTT
  Okay. So let's try to log into the login nodes first.
 
 00:15:09.880 --> 00:15:20.880
- So right now we are at this location, so-called VM77. This is now within BlackHat.
+ So right now we are at this location, so-called VM77. This is now within Blackett.
 
 00:15:20.880 --> 00:15:33.880
  One thing I didn't mention is that the documentation is actually located at a GitHub repository.
@@ -580,7 +580,7 @@ WEBVTT
  because you work more than one node.
 
 00:16:24.060 --> 00:16:27.000
- This is the way that HT conducts,
+ This is the way that HTCondor,
 
 00:16:27.000 --> 00:16:29.020
  how you classify different kinds of job.
@@ -598,7 +598,7 @@ WEBVTT
  or on the log-in node, VM77.
 
 00:16:41.840 --> 00:16:44.860
- So this is the WAPT script I mentioned
+ So this is the wrapper script I mentioned
 
 00:16:44.860 --> 00:16:47.880
  that is trying to coordinate,
@@ -652,13 +652,13 @@ WEBVTT
  So this is the outline of what you are going to start your job.
 
 00:17:37.240 --> 00:17:39.740
- So within that job conversion route,
+ So within that job configuration file,
 
 00:17:39.740 --> 00:17:42.780
  we said that there's two different scripts.
 
 00:17:42.780 --> 00:17:47.040
- So one of them is called mf.sh, which set up the environment.
+ So one of them is called env.sh, which set up the environment.
 
 00:17:47.040 --> 00:17:50.640
  So let's see what it is.
@@ -667,7 +667,7 @@ WEBVTT
  And actually, we can actually do something like this.
 
 00:17:53.540 --> 00:18:00.420
- So this is the mth.sh on the right-hand side.
+ So this is the env.sh on the right-hand side.
 
 00:18:00.420 --> 00:18:05.980
  So you basically see that there was a file when I was--
@@ -703,10 +703,10 @@ WEBVTT
  For example, for the one that I'm providing here,
 
 00:18:41.760 --> 00:18:43.740
- you have Python, you have MPIRUN.
+ you have Python, you have mpirun.
 
 00:18:43.740 --> 00:18:46.000
- So when you run this, like, which Python, which MPIRUN,
+ So when you run this, like, which Python, which mpirun,
 
 00:18:46.000 --> 00:18:47.940
  you're going to see the feedback there,
@@ -721,7 +721,7 @@ WEBVTT
  when your job actually starts, what it's trying to do
 
 00:19:01.500 --> 00:19:05.600
- is to use this best function that I provide
+ is to use this bash function that I provide
 
 00:19:05.600 --> 00:19:08.940
  to set up your so-called OpenMPI host first.
@@ -739,7 +739,7 @@ WEBVTT
  and then you specify a host by this environment variable that's
 
 00:19:19.840 --> 00:19:23.020
- prepared by this best function I provided.
+ prepared by this bash function I provided.
 
 00:19:23.020 --> 00:19:25.960
  And then Python-- in this case, it's very simple.
@@ -775,10 +775,10 @@ WEBVTT
  so nothing is happening.
 
 00:19:57.980 --> 00:20:00.500
- And when I run this so-called tell command,
+ And when I run this so-called tail command,
 
 00:20:00.500 --> 00:20:04.740
- it's trying to aggressively print out the things as long
+ it's trying to aggressively print out the things as soon
 
 00:20:04.740 --> 00:20:07.520
  as it starts to come to life.
@@ -787,13 +787,13 @@ WEBVTT
  So right now, the job just started,
 
 00:20:10.540 --> 00:20:12.960
- and you can see MPI zero out, meaning
+ and you can see mpi-0.out, meaning
 
 00:20:12.960 --> 00:20:15.340
  that the first physical node is trying
 
 00:20:15.340 --> 00:20:20.240
- to run the mth.exe script over there,
+ to run the env.sh script over there,
 
 00:20:20.240 --> 00:20:22.700
  and it's starting to unarchive your environment.
@@ -823,10 +823,10 @@ WEBVTT
  So the Python is available over here.
 
 00:20:44.300 --> 00:20:46.040
- MPI one is available over there.
+ mpirun is available over there.
 
 00:20:46.040 --> 00:20:48.640
- And then this MPI.log file is telling you
+ And then this mpi.log file is telling you
 
 00:20:48.640 --> 00:20:52.580
  that these processes are actually
@@ -835,10 +835,10 @@ WEBVTT
  launched over there already.
 
 00:20:54.240 --> 00:20:57.580
- So this different file is telling you different things.
+ So these different files are telling you different things.
 
 00:20:57.580 --> 00:21:02.820
- So MPI zero.out is really the standard output
+ So mpi-0.out is really the standard output
 
 00:21:02.820 --> 00:21:05.340
  from your MPI application.
@@ -847,19 +847,19 @@ WEBVTT
  Now it's telling you, hello world, I'm from--
 
 00:21:07.340 --> 00:21:15.420
- which processor on regional etc and then it ends so mpi.log which is what ht counter is telling you
+ which processor on which node etc and then it ends so mpi.log which is what HTCondor is telling you
 
 00:21:15.420 --> 00:21:23.340
  tells you that okay these nodes exit exceeded over there and is terminated and over here is that
 
 00:21:23.340 --> 00:21:28.620
- job terminus on its own accord so there's no like failure over there so that's the end now i can just
+ job terminates on its own accord so there's no like failure over there so that's the end now i can just
 
 00:21:31.260 --> 00:21:37.740
  stop this process. So this is a successful live demo of the MPI application. So any questions so
 
 00:21:37.740 --> 00:21:49.240
- far? I would have one. Yes. Oh, sorry. Andrew was first. Yeah. I mean, so I lost the farce for the
+ far? I would have one. Yes. Oh, sorry. Andrew was first. Yeah. I mean, so I lost the forest for the
 
 00:21:49.240 --> 00:21:53.920
  trees a bit. I'm suddenly confused about communication within a node versus between
@@ -931,7 +931,7 @@ WEBVTT
  And then when I say request CPU equals 16, it means
 
 00:23:00.540 --> 00:23:10.540
- set per like MPI or HD conda processors, they have 16 logical CPUs there. So one thing I was trying to
+ set per like MPI or HTCondor processors, they have 16 logical CPUs there. So one thing I was trying to
 
 00:23:10.540 --> 00:23:19.420
  explain is those two so-called machines can actually land in the same physical node. This is part of the
@@ -949,16 +949,16 @@ WEBVTT
  have is exactly two. If you read through the documentation in that script, there's
 
 00:23:43.660 --> 00:23:48.700
- also another mode you can launch MPI processors, which I'm not talking about here. So we only have
+ also another mode you can launch MPI processes, which I'm not talking about here. So we only have
 
 00:23:48.700 --> 00:23:53.980
- two MPI processors. When you are seeing the so-called like how well from the process one
+ two MPI processes. When you are seeing the so-called like how well from the process one
 
 00:23:53.980 --> 00:23:58.300
  one out of two there is the first MPI process.
 
 00:23:58.300 --> 00:24:01.920
- So there's no like threat level parallelism
+ So there's no like thread level parallelism
 
 00:24:01.920 --> 00:24:04.780
  so far in the thing I demonstrated.
@@ -973,13 +973,13 @@ WEBVTT
  You can use MPI, sometimes called MPI plus X,
 
 00:24:13.840 --> 00:24:17.560
- where X is often open MP,
+ where X is often OpenMP,
 
 00:24:17.560 --> 00:24:20.220
  if you're not doing something fancy.
 
 00:24:20.220 --> 00:24:24.180
- So MPI plus open MP there, right?
+ So MPI plus OpenMP there, right?
 
 00:24:24.180 --> 00:24:26.580
  So now you have two MPI processes
@@ -988,10 +988,10 @@ WEBVTT
  and within each process, you can have multi-threading.
 
 00:24:30.280 --> 00:24:33.080
- So for example, if you use Toast map making,
+ So for example, if you use TOAST mapmaking,
 
 00:24:33.080 --> 00:24:36.300
- by default is already using open MP.
+ by default is already using OpenMP.
 
 00:24:36.300 --> 00:24:38.520
  So there's some sort of environmental variable,
@@ -1000,7 +1000,7 @@ WEBVTT
  which is also set by my wrapper script
 
 00:24:41.300 --> 00:24:44.920
- that tells Toast how many threads they should use
+ that tells TOAST how many threads they should use
 
 00:24:44.920 --> 00:24:47.160
  within an MPI process.
@@ -1033,7 +1033,7 @@ WEBVTT
  because it might be on different nodes
 
 00:25:13.640 --> 00:25:17.440
- and because this is only HPC and not HPC,
+ and because this is only HTC and not HPC,
 
 00:25:17.440 --> 00:25:18.640
  that can be very slow?
@@ -1069,10 +1069,10 @@ WEBVTT
  but not over the...
 
 00:25:50.160 --> 00:25:53.160
- the network, which by the way have other communications
+ the network, which by the way have other complications
 
 00:25:53.160 --> 00:25:55.900
- because I mentioned that it's 10 GBE,
+ because I mentioned that it's 10 GbE,
 
 00:25:55.900 --> 00:25:58.780
  but like which switch are they landing on?
@@ -1093,10 +1093,10 @@ WEBVTT
  will land within the switch.
 
 00:26:14.200 --> 00:26:18.080
- So I would say like try to avoid this core,
+ So I would say like try to avoid this, called,
 
 00:26:18.080 --> 00:26:20.140
- like internal network communication
+ like inter-network communication
 
 00:26:20.140 --> 00:26:21.640
  as best as you can.
@@ -1180,7 +1180,7 @@ WEBVTT
  So the software environment you prepare over there will not work.
 
 00:29:08.960 --> 00:29:16.240
- So that's why we need to think about how software can be deployed, which is the center of this page.
+ So that's why we need to think about how software can be deployed, which is the centre of this page.
 
 00:29:16.240 --> 00:29:19.800
  And there are basically at least three different methods, right?
@@ -1246,7 +1246,7 @@ WEBVTT
  So you need to add something, or you
 
 00:30:40.800 --> 00:30:43.000
- want to have a newer version of Toast, let's say.
+ want to have a newer version of TOAST, let's say.
 
 00:30:43.000 --> 00:30:45.000
  And this is sort of an internal--
@@ -1318,7 +1318,7 @@ WEBVTT
  So one is just transferring file from via the server class at the job
 
 00:31:50.700 --> 00:31:56.140
- configuration file using HTConda. So this is the simplest one but also the
+ configuration file using HTCondor. So this is the simplest one but also the
 
 00:31:56.140 --> 00:32:01.120
  most limited in terms of capability and is something we are not recommend.
@@ -1552,7 +1552,7 @@ WEBVTT
  you have used up from your system,
 
 00:37:07.360 --> 00:37:11.440
- like allocation, like nurse hours, something like that.
+ like allocation, like NERSC hours, something like that.
 
 00:37:11.440 --> 00:37:13.860
  And also in terms of the turnaround time,
@@ -1582,10 +1582,10 @@ WEBVTT
  a more capable system is more lenient to that.
 
 00:37:37.280 --> 00:37:40.360
- Meaning that if you want to adapt a workflow from nurse
+ Meaning that if you want to adapt a workflow from NERSC
 
 00:37:40.360 --> 00:37:42.980
- to the SLUK data center,
+ to the SO:UK Data Centre,
 
 00:37:42.980 --> 00:37:46.720
  you might see bottlenecks that you haven't been thought of.
@@ -1639,7 +1639,7 @@ WEBVTT
  How soon will the scheduler be able
 
 00:38:31.160 --> 00:38:37.880
- to put your job in the queue. So when you adapt that kind of workflow to Black Hat, it will be
+ to put your job in the queue. So when you adapt that kind of workflow to Blackett, it will be
 
 00:38:37.880 --> 00:38:43.400
  even worse. So if you try to start 5,000 positions, I don't know how long would it be able to start.
@@ -1648,10 +1648,10 @@ WEBVTT
  But if you bring it down into 500 different jobs, then basically most of them will start instantly.
 
 00:38:49.160 --> 00:38:56.440
- So in this aspect, if you tune your workflow specifically for Black Hat, you can actually
+ So in this aspect, if you tune your workflow specifically for Blackett, you can actually
 
 00:38:56.440 --> 00:39:01.560
- have faster turnaround time in at least in some situation because at nurse if you if you try you
+ have faster turnaround time in at least in some situation because at NERSC if you if you try you
 
 00:39:01.560 --> 00:39:06.440
  know something called debug partition that's not supposed to be in production if you put it in
@@ -1672,7 +1672,7 @@ WEBVTT
  job like kind of like the man making i was talking about you're not doing some you're only doing
 
 00:39:38.760 --> 00:39:44.120
- naive map making each process are not communicating so each of them are reading their own tld and
+ naive map making each process are not communicating so each of them are reading their own TOD and
 
 00:39:44.120 --> 00:39:49.720
  writing their own maps so each of them is one atomic job so if you try to factor that out
@@ -1690,7 +1690,7 @@ WEBVTT
  and i can't talk about more details about here but like i kind of discourage which is also
 
 00:40:11.800 --> 00:40:18.440
- what nurse is discerning about rolling your own workflow manager which basically because
+ what NERSC is discerning about rolling your own workflow manager which basically because
 
 00:40:18.440 --> 00:40:23.480
  workflow managers are trying to solve these issues right so we can think about like you see job
@@ -1711,10 +1711,10 @@ WEBVTT
  like do you need to check for corrupted maps from individual outputs etc so
 
 00:40:52.920 --> 00:41:00.760
- One caveat I want to mention here is, while filter beam mapping is well-suited for map-reduced
+ One caveat I want to mention here is, while filter beam mapping is well-suited for MapReduce
 
 00:41:00.760 --> 00:41:07.640
- product, but we need to think about how you treat the data from each map. Map in the map-reduced
+ product, but we need to think about how you treat the data from each map. Map in the MapReduce
 
 00:41:07.640 --> 00:41:13.800
  sense, not necessarily the CMB maps. So meaning that each function, once you have the product,
@@ -1849,7 +1849,7 @@ WEBVTT
  But if you know other ones, you can try to add the document, submit a pull request.
 
 00:43:26.320 --> 00:43:32.020
- Okay, so that's all for the introduction of our data center.
+ Okay, so that's all for the introduction of our data centre.
 
 00:43:32.020 --> 00:43:33.780
  Thank you.
