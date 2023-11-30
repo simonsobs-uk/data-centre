@@ -6,6 +6,7 @@
 :hidden:
 
 user/onboarding
+user/logging-in
 user/quick-start
 user/pipeline
 ```
