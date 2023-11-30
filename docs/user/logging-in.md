@@ -23,6 +23,7 @@ Host blackett
 # this is for ssh into worker nodes on Blackett which loads its own temporary keys
 Host condor-job.*
     IdentitiesOnly yes
+    AddKeysToAgent no
 ```
 
 Replace `~/.ssh/id_ed25519.pub` with `~/.ssh/id_rsa.pub`, matching the one you sent to us from [the previous section](#obtaining-unix-account).
