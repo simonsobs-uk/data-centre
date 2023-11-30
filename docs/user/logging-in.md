@@ -26,6 +26,6 @@ Host condor-job.*
     AddKeysToAgent no
 ```
 
-Replace `~/.ssh/id_ed25519.pub` with `~/.ssh/id_rsa.pub`, matching the one you sent to us from [the previous section](#obtaining-unix-account).
+Replace `~/.ssh/id_ed25519.pub` with `~/.ssh/id_rsa.pub` if necessary, matching the one you sent to us from [the previous section](#obtaining-unix-account).
 
 You can then `ssh blackett` instead.
