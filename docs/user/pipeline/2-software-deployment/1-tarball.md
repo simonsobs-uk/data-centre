@@ -63,7 +63,7 @@ After waiting for a while as the job finished, you can see what happened by read
 See [](#monitor-your-jobs) to see how to monitor the status of your job. For advance use, use this command instead,
 
 ```sh
-condor_submit tarball.ini; tail -F tarball.log tarballs.out tarball.err
+condor_submit tarball.ini; tail -F tarball.log tarball.out tarball.err
 ```
 
 and see [](#tail) for an explanation on what it does.
