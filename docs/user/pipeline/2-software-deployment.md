@@ -18,4 +18,13 @@ The *de facto* way to deploy software on CERN compatible grid system including B
 |:--------------------|:-------------------------------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  **Tarball**        |  Packaging software and its dependencies in a compressed format, then transferring to worker nodes.    |  Custom software      |  Manual management; Transfer overhead.                     | Documentation provided to enable you as a developer to control your stack.                                                                                                   |
 |  **CVMFS**          |  Standardized software distribution system used in CERN's grid.                                        |  Production software  |  Read-only; Needs elevated privilege for deployment.       | Software deployment is centrally maintained, deployed periodically. You can requests softwares to be included, and approvals will be granted based on technical limitations. |
-|  **Containers**     |  Use of technologies like Docker to encapsulate software in isolated environments.                     |  Development, Testing |  Cannot be used with the `parallel` universe in HTCondor.  | Not supported but you can feel free to try when multi-node parallelism is not needed.                                                                                        |  
+|  **Containers**     |  Use of technologies like Docker to encapsulate software in isolated environments.                     |  Development, Testing |  Cannot be used with the `parallel` universe in HTCondor.  | Not supported but you can feel free to try when multi-node parallelism is not needed.[^1]                                                                                    |  
+
+[^1]: Blackett's support of container is copied [from here](https://github.com/simonsobs-uk/data-centre/issues/14#issue-1873072030) as below:
+
+    - The docker universe won't work because there's no docker on the worker nodes.
+    - The worker nodes have Apptainer installed though. Jobs can use it to run their workloads inside a container.
+    - Running containers in a vanilla universe job works fine.
+    - No experience with doing the same in parallel universe jobs. There might be communication problems between the MPI processes if MPI is running inside a container.
+
+    Note that while Apptainer (formerly Singularity) is supported by Blackett to a certain capacity, this is not supported by us, the SO:UK Data Centre. Again, feel free to experiment with it, and even contribute to this documentation in the developer guide when you find it useful.
