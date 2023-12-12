@@ -45,7 +45,7 @@ serve: doc
 
 # releasing ####################################################################
 
-.PHONY: bump opt
+.PHONY: bump opt linkcheck
 bump:
 	bump2version $(PART)
 	git push --follow-tags
@@ -53,6 +53,9 @@ bump:
 # to be run on vm77 for sharing to other users
 opt:
 	cp -f bin/xrootdfs.sh /opt/simonsobservatory
+
+linkcheck:
+	linkcheck --external https://simonsobs-uk.github.io/data-centre
 
 ################################################################################
 
