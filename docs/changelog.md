@@ -1,3 +1,4 @@
+(changelog)=
 # Changelog
 
 - v0.3.0: Supporting CVMFS
