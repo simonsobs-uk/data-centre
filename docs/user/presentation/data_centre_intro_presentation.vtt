@@ -1150,7 +1150,7 @@ WEBVTT
  So there's like software deployment, and even there's another page over here, reading and writing data, right?
 
 00:28:11.220 --> 00:28:16.980
- So you can think of when you are preparing a note to do something, you need to read.
+ So you can think of when you are preparing a node to do something, you need to read.
 
 00:28:16.980 --> 00:28:23.360
  You need to read from a directory to load the software. So this is a software deployment over here, and also input data, output data.
@@ -1159,22 +1159,22 @@ WEBVTT
  So this is more complicated than what you would be doing at NERSC.
 
 00:28:30.300 --> 00:28:36.040
- Basically, because at NERSC, everything is in a file system already. They are mounted. They are mounted in your login note.
+ Basically, because at NERSC, everything is in a file system already. They are mounted. They are mounted in your login node.
 
 00:28:36.040 --> 00:28:40.860
- They are also mounted on the compute note, and they are totally transparent that you don't need to.
+ They are also mounted on the compute node, and they are totally transparent that you don't need to.
 
 00:28:40.860 --> 00:28:46.960
- So the only thing you need to copy is a file path, and you don't need to worry if this file will exist on the compute note.
+ So the only thing you need to copy is a file path, and you don't need to worry if this file will exist on the compute node.
 
 00:28:47.460 --> 00:28:55.040
- But at a grid system here, each note, the so-called compute notes or worker notes over there, they are like in a blank space.
+ But at a grid system here, each node, the so-called compute nodes or worker nodes over there, they are like in a blank state.
 
 00:28:55.040 --> 00:28:58.580
  They have, they doesn't have your home, for example.
 
 00:28:58.580 --> 00:29:05.200
- It doesn't, it doesn't see the kind of things you write at your login notes, the VM77 there.
+ It doesn't, it doesn't see the kind of things you write at your login nodes, the vm77 there.
 
 00:29:05.200 --> 00:29:08.960
  So the software environment you prepare over there will not work.
@@ -1186,19 +1186,19 @@ WEBVTT
  And there are basically at least three different methods, right?
 
 00:29:19.800 --> 00:29:29.760
- You can't basically ignore the last method containers here is not supported by us for, you might say, a deficiency in Htconda.
+ You can basically ignore the last method containers here is not supported by us for, you might say, a deficiency in HTCondor.
 
 00:29:29.760 --> 00:29:40.740
- So the two like really defractor standards to deploy software at a grid computing like this is either TABOR or CPMFS.
+ So the two like really de-facto standards to deploy software at a grid computing like this is either tarball or CVMFS.
 
 00:29:40.740 --> 00:29:45.220
- And CPMFS is right now not.
+ And CVMFS is right now not
 
 00:29:46.040 --> 00:29:49.340
  set up yet for our so-called virtual organization.
 
 00:29:49.340 --> 00:29:54.260
- So it means that right now, the table method
+ So it means that right now, the tarball method
 
 00:29:54.260 --> 00:29:56.420
  is the only way we can do it.
@@ -1207,10 +1207,10 @@ WEBVTT
  And there's a software package that I
 
 00:29:59.180 --> 00:30:03.040
- provide that includes all the dependency and SOTOD lib.
+ provide that includes all the dependencies and sotodlib.
 
 00:30:03.040 --> 00:30:07.360
- So it also includes SVD3G, I think.
+ So it also includes SPT-3G, I think.
 
 00:30:07.360 --> 00:30:10.420
  And also, what else?
@@ -1222,7 +1222,7 @@ WEBVTT
  But of course, it doesn't include everything.
 
 00:30:15.040 --> 00:30:18.520
- For example, currently, the so-called NA master
+ For example, currently, the so-called NaMaster
 
 00:30:18.520 --> 00:30:20.100
  is not there yet.
@@ -1231,10 +1231,10 @@ WEBVTT
  So I also, in one page--
 
 00:30:24.000 --> 00:30:28.220
- actually, in this page of table method, in the end of that page,
+ actually, in this page of tarball method, in the end of that page,
 
 00:30:28.220 --> 00:30:33.580
- I mentioned how you can tailor your table, basically.
+ I mentioned how you can tailor your tarball, basically.
 
 00:30:33.580 --> 00:30:36.140
  So not everything I provided--
@@ -1282,7 +1282,7 @@ WEBVTT
  Maybe I can just read through them.
 
 00:31:10.980 --> 00:31:14.960
- Yeah, I think probably don't do the other demo colon, because we only
+ Yeah, I think probably don't do the other demo Kolen, because we only
 
 00:31:14.960 --> 00:31:20.240
  have sort of minutes till kind of hard deadline.
@@ -1315,22 +1315,22 @@ WEBVTT
  If you look at the table of contents on the left-hand side,
 
 00:31:44.920 --> 00:31:50.700
- So one is just transferring file from via the server class at the job
+ So one is just transferring file from via the so-called ClassAd, the job
 
 00:31:50.700 --> 00:31:56.140
- configuration file using HTCondor. So this is the simplest one but also the
+ configuration file, using HTCondor. So this is the simplest one but also the
 
 00:31:56.140 --> 00:32:01.120
- most limited in terms of capability and is something we are not recommend.
+ most limited in terms of capability and is something we are not recommending.
 
 00:32:01.120 --> 00:32:05.260
- Basically the submit node is very small. We only have 200 gigabytes of this space
+ Basically the submit node is very small. We only have 200 GB of this space
 
 00:32:05.260 --> 00:32:10.440
  and if you want to use this basically you need to assume everything is on
 
 00:32:10.440 --> 00:32:14.940
- your submit node either like reading from or traveling to. So this is not a
+ your submit node either like reading from or transmitting to. So this is not a
 
 00:32:14.940 --> 00:32:19.560
  recommended method so I will skip it here but but the example is there you
@@ -1339,19 +1339,13 @@ WEBVTT
  can try. So this is the next method the so-called grid storage system is the
 
 00:32:25.380 --> 00:32:29.940
- defractor standard that on the grid they were committed to do it this way. So this
+ de-facto standard that on the grid they were committed to do it this way. So this
 
 00:32:29.940 --> 00:32:34.140
  is the main thing and lastly there's something we are not going to mention
 
 00:32:34.140 --> 00:32:39.440
- today is the librarian. So we I think we all know that we are going to load some
-
-00:32:39.440 --> 00:32:40.360
- like the type of code.
-
-00:32:40.360 --> 00:32:40.420
- So this is the main thing and lastly there's something we are not going to
+ today is the Librarian. So we I think we all know that we are going to load some
 
 00:32:40.420 --> 00:32:46.540
  the TOD from librarian, but it's more a special case of loading data. So I'm not going to talk
@@ -1363,10 +1357,10 @@ WEBVTT
  so I, this documentation goes through it in detail. So you see, there's a lot of sub pages
 
 00:32:57.780 --> 00:33:05.280
- within this. Many of them is related to setting things up. But fortunately, if you're using VM
+ within this. Many of them is related to setting things up. But fortunately, if you're using vm77
 
 00:33:05.280 --> 00:33:11.740
- seven, seven, seven is easier. So the thing you need to do is with the setup that we already
+ is easier. So the thing you need to do is with the setup that we already
 
 00:33:11.740 --> 00:33:24.940
  created, let's see this part. So the, the thing that you need to do is starting from here. So
@@ -1404,11 +1398,8 @@ WEBVTT
 00:34:29.580 --> 00:34:34.100
  this is what you're going to see. And it will say a certain proxy is created over here,
 
-00:34:34.100 --> 00:34:34.560
- the browser is created over here, and so on. And it will tell you that this is what you're going to see.
-
 00:34:34.560 --> 00:34:38.800
- POSI is going to read it until that time.
+ and the proxy is going to be valid until that time.
 
 00:34:38.800 --> 00:34:42.320
  Once you have that file, you can then start your job.
@@ -1426,10 +1417,10 @@ WEBVTT
  then you have a job conversion file like this,
 
 00:34:58.900 --> 00:35:02.840
- which transfer your AC to the worker notes.
+ which transfer your AC to the worker nodes.
 
 00:35:02.840 --> 00:35:07.840
- And then in your job script on the worker notes,
+ And then in your job script on the worker nodes,
 
 00:35:07.840 --> 00:35:10.960
  there's one single command you need to set,
@@ -1438,7 +1429,7 @@ WEBVTT
  export this environment variable.
 
 00:35:13.600 --> 00:35:18.380
- And after this, your worker notes will be able to read
+ And after this, your worker nodes will be able to read
 
 00:35:18.380 --> 00:35:23.380
  and write to and from the so-called grid storage system.
@@ -1450,7 +1441,7 @@ WEBVTT
  You can try to use a special kind of list command,
 
 00:35:30.560 --> 00:35:32.600
- so-called GFAL list,
+ so-called gfal-ls,
 
 00:35:32.600 --> 00:35:37.100
  to see what is available within your grid storage system.
@@ -1480,7 +1471,7 @@ WEBVTT
  interact with the grid storage system.
 
 00:36:01.240 --> 00:36:02.360
- And, and for the BAU,
+ And, and for
 
 00:36:02.360 --> 00:36:04.960
  the bulk of the data that we are going to have,
@@ -1588,13 +1579,13 @@ WEBVTT
  to the SO:UK Data Centre,
 
 00:37:42.980 --> 00:37:46.720
- you might see bottlenecks that you haven't been thought of.
+ you might see bottlenecks that you haven't been thinking about.
 
 00:37:46.720 --> 00:37:49.700
  So one example I gave here is that,
 
 00:37:49.700 --> 00:37:50.760
- for example, in map making,
+ for example, in mapmaking,
 
 00:37:50.760 --> 00:37:54.500
  so let's say I have 500 hours of observation.
@@ -1624,10 +1615,10 @@ WEBVTT
  The reason is now you have a couple of other problems.
 
 00:38:18.400 --> 00:38:20.400
- So it's low balancing.
+ So it's load-balancing.
 
 00:38:20.400 --> 00:38:23.340
- So do all the map making finish at the same time
+ So do all the mapmaking finish at the same time
 
 00:38:23.340 --> 00:38:25.180
  and also turnaround time,
@@ -1642,7 +1633,7 @@ WEBVTT
  to put your job in the queue. So when you adapt that kind of workflow to Blackett, it will be
 
 00:38:37.880 --> 00:38:43.400
- even worse. So if you try to start 5,000 positions, I don't know how long would it be able to start.
+ even worse. So if you try to start 5,000 processes, I don't know how long would it be able to start.
 
 00:38:43.400 --> 00:38:49.160
  But if you bring it down into 500 different jobs, then basically most of them will start instantly.
@@ -1657,7 +1648,7 @@ WEBVTT
  know something called debug partition that's not supposed to be in production if you put it in
 
 00:39:06.440 --> 00:39:11.320
- production kill the typical turnaround time is like at least three days so if you want to run
+ production queue the typical turnaround time is like at least three days so if you want to run
 
 00:39:11.320 --> 00:39:18.840
  a map that will finish in three minutes it will be most probably going very faster over here so the
@@ -1669,10 +1660,10 @@ WEBVTT
  atomic job by atomic i mean that that single job has it is not going to communicate with any other
 
 00:39:33.720 --> 00:39:38.760
- job like kind of like the man making i was talking about you're not doing some you're only doing
+ job like kind of like the mapmaking I was talking about you're not doing some you're only doing
 
 00:39:38.760 --> 00:39:44.120
- naive map making each process are not communicating so each of them are reading their own TOD and
+ naive mapmaking each process are not communicating so each of them are reading their own TOD and
 
 00:39:44.120 --> 00:39:49.720
  writing their own maps so each of them is one atomic job so if you try to factor that out
@@ -1690,13 +1681,13 @@ WEBVTT
  and i can't talk about more details about here but like i kind of discourage which is also
 
 00:40:11.800 --> 00:40:18.440
- what NERSC is discerning about rolling your own workflow manager which basically because
+ what NERSC is discouraging about rolling your own workflow manager which basically because
 
 00:40:18.440 --> 00:40:23.480
  workflow managers are trying to solve these issues right so we can think about like you see job
 
 00:40:23.480 --> 00:40:29.080
- managers agnostics do your workflow manager assumes the presence of slurm for example
+ managers agnostics—do your workflow manager assumes the presence of SLURM5 for example
 
 00:40:29.080 --> 00:40:34.120
  and how job dependencies are handled so let's say if you after you start map making you also
@@ -1705,13 +1696,13 @@ WEBVTT
  have other things that depends on the finished maps right how how would those be launched later
 
 00:40:39.400 --> 00:40:45.160
- on do you need to like how babysit your job and launch it manually how failed jobs are handled
+ on do you need to like kind of babysit your job and launch it manually, how failed jobs are handled,
 
 00:40:45.160 --> 00:40:52.200
  like do you need to check for corrupted maps from individual outputs etc so
 
 00:40:52.920 --> 00:41:00.760
- One caveat I want to mention here is, while filter beam mapping is well-suited for MapReduce
+ One caveat I want to mention here is, while filter-bin mapmaking is well-suited for MapReduce
 
 00:41:00.760 --> 00:41:07.640
  product, but we need to think about how you treat the data from each map. Map in the MapReduce
@@ -1783,7 +1774,7 @@ WEBVTT
  And you can also download different formats,
 
 00:42:14.480 --> 00:42:18.040
- like PDF, EPUB, main page, single page HTML.
+ like PDF, EPUB, man page, single page HTML.
 
 00:42:18.040 --> 00:42:20.120
  And how would those formats be useful?
@@ -1795,7 +1786,7 @@ WEBVTT
  So you can now start to chat with your model.
 
 00:42:26.620 --> 00:42:30.300
- For example, if you inject your single-page HTML to Chativity,
+ For example, if you inject your single-page HTML to ChatGPT,
 
 00:42:30.300 --> 00:42:33.940
  and you can try to summarize what is this documentation,
@@ -1855,13 +1846,13 @@ WEBVTT
  Thank you.
 
 00:43:33.780 --> 00:43:36.480
- Cool. That's brilliant. Thanks, Colin.
+ Cool. That's brilliant. Thanks, Kolen.
 
 00:43:36.480 --> 00:43:39.480
  Right, we're close to five o'clock.
 
 00:43:39.480 --> 00:43:41.660
- Does anyone have any quick questions for Colin?
+ Does anyone have any quick questions for Kolen?
 
 00:43:41.660 --> 00:43:45.300
  Okay, so we're close to five o'clock.
