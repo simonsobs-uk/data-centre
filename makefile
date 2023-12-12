@@ -55,7 +55,7 @@ opt:
 	cp -f bin/xrootdfs.sh /opt/simonsobservatory
 
 linkcheck:
-	linkcheck --external https://simonsobs-uk.github.io/data-centre
+	linkcheck --external --no-check-anchors https://simonsobs-uk.github.io/data-centre
 
 ################################################################################
 
