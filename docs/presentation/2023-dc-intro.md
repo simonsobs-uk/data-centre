@@ -1,4 +1,4 @@
-# 2023-11-13 SO:UK BB "see what's what & get involved" day—Introduction to the SO:UK Data Centre
+# 2023-11-13 SO:UK BB day—Introduction to the SO:UK Data Centre
 
 :::{note}
 Initially presented on 2023-11-13 shortly after the v0.2.0 release of the SO:UK Data Centre documentation. See [](#changelog) to see what's changed since then.
