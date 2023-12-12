@@ -3,10 +3,10 @@
 :numbered:
 :hidden:
 
-presentation
 user
 developer
 maintainer
+presentation
 api/modules
 changelog
 ```
