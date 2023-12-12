@@ -45,11 +45,11 @@ Point the user to [this section](#obtaining-unix-account) and ask them to send t
 
     Follow the link and register there.
 
-2. On <https://aai.egi.eu/auth/realms/egi/account/#/personal-info>, get your username.
+2. On <https://aai.egi.eu/auth/realms/egi/account/#/personal-info>, copy the content of "Username" field.
 
 3. Follow [CVMFS - GridPP Wiki](https://www.gridpp.ac.uk/wiki/CVMFS#Request_access) to send an email including the username above as your `voperson_id`:
 
-- Name of the VO or CVMFS repository: northgrid.gridpp.ac.uk
+- Name of the VO or CVMFS repository: `northgrid.gridpp.ac.uk`
 - The “voperson_id” from your account in EGI CheckIn: ...@egi.eu
 
 4. Wait for email from <lcg-support@gridpp.rl.ac.uk> when the admin added you to the service.
