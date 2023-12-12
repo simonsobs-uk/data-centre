@@ -1,5 +1,21 @@
 # Changelog
 
+- v0.3.0: Supporting CVMFS
+    - doc:
+        - refactor "Grid Storage Systems" across user guide and developer guide, to focus only on the simple, essential stuffs in the user guide.
+        - add guide to log-in, including ssh-config.
+        - document wall-clock time
+        - document Apptainer
+        - add basic documentation on systems
+        - add badges
+        - improve readme / intro with relevant links.
+        - add guide to register as Content Manager
+            - add guide to publish to CVMFS
+    - technical:
+        - fix GitHub Pages
+        - Release all available formats on Read the Docs
+        - improve `console` in syntax highlighting
+        - improve build systems with more targets
 - v0.2.0: Supporting the grid storage system
     - doc:
         - add sections on the grid storage systems and refactor the IO sections
