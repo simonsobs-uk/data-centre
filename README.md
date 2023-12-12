@@ -18,14 +18,14 @@ This documents the baseline design of the SO:UK Data Centre at [Blackett](https:
 
 The GitHub repository [simonsobs-uk/data-centre](https://github.com/simonsobs-uk/data-centre) contains
 
-- source of the documentation, including the codes in the documentation that you can run directly,
-- the Issues tracker as well as Discussions, for any data centre related bugs or questions, and
+- [source of the documentation](https://github.com/simonsobs-uk/data-centre/tree/main/docs), including the codes in the documentation that you can run directly,
+- the [Issues](https://github.com/simonsobs-uk/data-centre/issues) tracker as well as [Discussions](https://github.com/simonsobs-uk/data-centre/discussions), for any data centre related bugs or questions, and
 - a Python package for data centre maintenance.
 
-To access our documentation, you have a few options, (in the order of convenience to advanced usages):
+To access our documentation, you have a few options, (in the order from convenience to advanced usages):
 
-1. [SO:UK Data Centre documentation at Read the Docs](https://souk-data-centre.readthedocs.io/en/latest/). This gives you access to all versions of SO:UK Data Centre documentations, as well as multiple output formats including HTML, ePub, PDF.
+1. [SO:UK Data Centre documentation at Read the Docs](https://souk-data-centre.readthedocs.io/en/latest/). This gives you access to all versions of SO:UK Data Centre documentations, as well as multiple output formats including [HTML](https://souk-data-centre.readthedocs.io/_/downloads/en/latest/htmlzip/), [ePub](https://souk-data-centre.readthedocs.io/_/downloads/en/latest/epub/), [PDF](https://souk-data-centre.readthedocs.io/_/downloads/en/latest/pdf/).
 2. [SO:UK Data Centre documentation at GitHub Pages](https://simonsobs-uk.github.io/data-centre/) which is HTML only and points to the latest commits only.
-3. [SO:UK Data Centre documentation at GitHub Releases](https://github.com/simonsobs-uk/data-centre/releases/latest). This gives you additional output formats such as man page and plain text.
+3. [SO:UK Data Centre documentation at GitHub Releases](https://github.com/simonsobs-uk/data-centre/releases/latest). This gives you additional output formats such as [man page](https://github.com/simonsobs-uk/data-centre/releases/latest/download/soukdatacentre.1) and [plain text](https://github.com/simonsobs-uk/data-centre/releases/latest/download/soukdatacentre.txt).
 
 Note that [Read the Docs serves the searches from server-side powered by Elasticsearch](https://docs.readthedocs.io/en/stable/server-side-search/index.html). So searches from Read the Docs and GitHub Pages will gives you different results. Try the Read the Docs first for better results and fall back to GitHub Pages.
