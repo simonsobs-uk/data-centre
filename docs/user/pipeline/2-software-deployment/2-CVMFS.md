@@ -20,7 +20,7 @@ create a file `cvmfs.ini`,
 
 The ClassAd involve a script `cvmfs.sh`,
 
-```{literalinclude} 1-cvmfs/cvmfs.sh
+```{literalinclude} 2-CVMFS/cvmfs.sh
 :language: sh
 ```
 
@@ -45,3 +45,9 @@ condor_submit cvmfs.ini; tail -F cvmfs.log cvmfs.out cvmfs.err
 ```
 
 and see [](#tail) for an explanation on what it does.
+
+The output of this job will be
+
+```{literalinclude} 2-CVMFS/cvmfs.out
+:language: console
+```
