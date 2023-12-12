@@ -14,7 +14,9 @@ chmod 600 "$HOME/.globus/usercred.p12"
 (creating-a-proxy)=
 # Creating a proxy
 
-This part needed to be done periodically.
+:::{note}
+This part needed to be done periodically, it will expires in a week in the example given below.
+:::
 
 ```sh
 voms-proxy-init --voms souk.ac.uk --valid 168:0
