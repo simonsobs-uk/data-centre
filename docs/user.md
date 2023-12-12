@@ -9,6 +9,7 @@ user/onboarding
 user/logging-in
 user/quick-start
 user/pipeline
+user/systems
 ```
 
 This is intended to be read by typical users following our recommended usage. While it is written for general audiences, some pointers specific to NERSC users will be given to adapt their pipelines at NERSC to the SO:UK Data Centre.
