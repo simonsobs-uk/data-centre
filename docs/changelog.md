@@ -4,6 +4,7 @@
 - v0.3.0: Supporting CVMFS
     - doc:
         - refactor "Grid Storage Systems" across user guide and developer guide, to focus only on the simple, essential stuffs in the user guide.
+        - add presentations
         - add guide to log-in, including ssh-config.
         - document wall-clock time
         - document Apptainer
