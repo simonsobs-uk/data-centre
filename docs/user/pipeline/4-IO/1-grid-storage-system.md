@@ -1,3 +1,4 @@
+(grid-storage-system)=
 # The grid storage system
 
 ```{toctree}

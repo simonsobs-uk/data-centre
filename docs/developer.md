@@ -5,6 +5,7 @@
 :hidden:
 
 developer/htcondor-glossary
+developer/grid-storage-system
 developer/tips
 ```
 

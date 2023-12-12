@@ -1,3 +1,4 @@
+(xrootd)=
 # Advanced usage: use XRootD to interact with the grid storage system directly
 
 Rather than using GFAL, you could access via the XRootD protocol directly. For example,

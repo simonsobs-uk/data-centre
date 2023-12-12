@@ -1,12 +1,9 @@
+(mount-xrootdfs)=
 # Mounting the grid storage system as a POSIX filesystem
 
 You can mount the grid storage system as a POSIX filesystem on our login (submit) node, or any other computer if you have setup the VOMS client correctly following [this section](#setup-voms-clients).
 
 This is for ease of interactive use, for example if you want to quickly see what files are there, or use command line programs such as `ranger`, `tree`, etc. that expects a POSIX filesystem. You could also run some lightweight scripts over the filesystem, but note that this usage is not performant and discouraged.
-
-## Installing XRootD
-
-Follow their documentation at [xrootd/xrootd: The XRootD central repository](https://github.com/xrootd/xrootd#installation-instructions).
 
 ## Mounting via `xrootdfs`
 
