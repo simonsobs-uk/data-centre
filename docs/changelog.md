@@ -3,6 +3,8 @@
 
 - v0.3.0: Supporting CVMFS
     - doc:
+        - document how to use CVMFS to load softwares (software deployment)
+        - simplify how AC is setup on worker nodes
         - refactor "Grid Storage Systems" across user guide and developer guide, to focus only on the simple, essential stuffs in the user guide.
         - add presentations
         - add guide to log-in, including ssh-config.
@@ -15,6 +17,8 @@
             - add guide to publish to CVMFS
     - technical:
         - fix GitHub Pages
+            - deployment path
+            - fetch-depth
         - Release all available formats on Read the Docs
         - improve `console` in syntax highlighting
         - improve build systems with more targets
