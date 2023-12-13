@@ -19,21 +19,13 @@ This will creates an Attribute Certificate (AC) to `/tmp/x509up_u$UID`.
 
 From now on **we assumes you already created a proxy recently and it has not been expired**.
 
-In the current directory that we are going to submit the job, we will then link the AC to a file here.
-
-```sh
-ln -s "/tmp/x509up_u$UID" ac.pem
-```
-
-While this is not necessary, this avoids hardcoding the path towards this file in your ClassAd, making sharing ClassAd with collaborators more reproducible.
-
-Now, in `gfal.ini`, we set it up to copy this `ac.pem` to the worker node:
+In `gfal.ini`, we set `use_x509userproxy`, and HTCondor will automatically copy from the standard location of the generated AC above and transfer it to the worker node for us.
 
 ```{literalinclude} 3-accessing-grid-storage-using-HTCondor/gfal.ini
 :language: ini
 ```
 
-And in `gfal.sh`, we use `export X509_USER_PROXY=ac.pem` to inform where our AC is:
+And in `gfal.sh`,
 
 ```{literalinclude} 3-accessing-grid-storage-using-HTCondor/gfal.sh
 :language: sh

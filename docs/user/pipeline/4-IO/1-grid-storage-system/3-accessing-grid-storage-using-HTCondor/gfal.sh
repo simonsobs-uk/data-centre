@@ -16,7 +16,6 @@ print_line() {
 
 ########################################################################
 
-export X509_USER_PROXY=ac.pem
 PROJ_DIR='bohr3226.tier2.hep.manchester.ac.uk//dpm/tier2.hep.manchester.ac.uk/home/souk.ac.uk'
 
 for PROTOCOL in davs root; do
