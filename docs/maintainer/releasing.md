@@ -1,5 +1,9 @@
 # Making a new release
 
+## Edit changelog
+
+Located at `docs/changelog.md`. Use <https://github.com/simonsobs-uk/data-centre/compare/v0.2.0...main> to help see what's changed for example.
+
 ## Building
 
 For the documentation, we aim to deliver it in these formats: HTML, ePub, PDF.
