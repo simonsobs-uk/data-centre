@@ -1,3 +1,4 @@
+(access-grid-storage)=
 # Accessing the grid storage system from worker nodes
 
 In the last section, we have seen how to connect to the grid storage system from a computer, including the submit nodes that we maintained.
