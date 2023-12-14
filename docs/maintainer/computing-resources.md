@@ -69,3 +69,20 @@ ssh northgridsgm@cvmfs-upload01.gridpp.rl.ac.uk
 Then starts to write something in `~/cvmfs_repo/simonsobservatory`. What you write will immediately be available at `/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory` on this publishing node. But it will only be synchronized to other sites with a time scale of around 1 hour.
 
 On `vm77`, check if you see your stuffs is in `/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory` already, if so, you can start to submit jobs that reads from there.
+
+## Monitoring
+
+### `condor_status`
+
+```sh
+# list all nodes in the pool along with their basic status information
+sudo condor_status
+# for more detailed information about each node
+sudo condor_status -long
+# see available nodes after constraints
+sudo condor_status -constraint 'Arch == "x86_64"'
+# Lists available nodes
+condor_status -avail
+# Lists only the machine names
+sudo condor_status -format "%s\n" Machine | sort -u
+```
