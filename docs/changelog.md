@@ -10,6 +10,8 @@
                 - write about continuous deployment
             - refactor "Grid Storage Systems" across user guide and developer guide, to focus only on the simple, essential stuffs in the user guide.
         - simplify how AC is setup on worker nodes
+        - add an example to run MPI applications in Vanilla universe
+        - document the behavior of `/tmp` on worker nodes
         - add presentations
         - add guide to log-in, including ssh-config.
         - document wall-clock time
