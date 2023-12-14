@@ -74,6 +74,8 @@ On `vm77`, check if you see your stuffs is in `/cvmfs/northgrid.gridpp.ac.uk/sim
 
 ### `condor_status`
 
+See [condor_status — HTCondor Manual](https://htcondor.readthedocs.io/en/latest/man-pages/condor_status.html) for details.
+
 `sudo condor_status`
 : list all nodes in the pool along with their basic status information
 
@@ -88,3 +90,6 @@ On `vm77`, check if you see your stuffs is in `/cvmfs/northgrid.gridpp.ac.uk/sim
 
 `sudo condor_status -format "%s\n" Machine | sort -u`
 : Lists only the machine names
+
+`sudo condor_status -autoformat Machine Arch Microarch | sort -u`
+: Auto-format instead.
