@@ -74,15 +74,17 @@ On `vm77`, check if you see your stuffs is in `/cvmfs/northgrid.gridpp.ac.uk/sim
 
 ### `condor_status`
 
-```sh
-# list all nodes in the pool along with their basic status information
-sudo condor_status
-# for more detailed information about each node
-sudo condor_status -long
-# see available nodes after constraints
-sudo condor_status -constraint 'Arch == "x86_64"'
-# Lists available nodes
-condor_status -avail
-# Lists only the machine names
-sudo condor_status -format "%s\n" Machine | sort -u
-```
+`sudo condor_status`
+: list all nodes in the pool along with their basic status information
+
+`sudo condor_status -long`
+: for more detailed information about each node
+
+`sudo condor_status -constraint 'Arch == "x86_64"'`
+: see available nodes after constraints
+
+`condor_status -avail`
+: Lists available nodes
+
+`sudo condor_status -format "%s\n" Machine | sort -u`
+: Lists only the machine names
