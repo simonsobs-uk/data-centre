@@ -3,7 +3,9 @@
 
 - v0.3.0: Supporting CVMFS
     - doc:
+        - refactor quick-start guide w/ CVMFS & grid-storage
         - document how to use CVMFS to load softwares (software deployment)
+        - write about continuous deployment
         - simplify how AC is setup on worker nodes
         - refactor "Grid Storage Systems" across user guide and developer guide, to focus only on the simple, essential stuffs in the user guide.
         - add presentations
@@ -15,6 +17,7 @@
         - improve readme / intro with relevant links.
         - add guide to register as Content Manager
             - add guide to publish to CVMFS
+        - maintainer's guide add monitoring
     - technical:
         - fix GitHub Pages
             - deployment path
