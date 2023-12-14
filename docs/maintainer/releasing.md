@@ -50,3 +50,13 @@ To make a new release,
     - `make bump PART=major` for major release.
 
 4. Check Read the Doc at <https://readthedocs.org/projects/souk-data-centre/builds/> to see the new builds are deployed successfully.
+
+## Releasing to `/opt/simonsobservatory` on `vm77`
+
+`make opt`.
+
+## Single file targets
+
+`make man txt` and upload to <https://github.com/simonsobs-uk/data-centre/releases/latest> manually.
+
+TODO: automate this.
