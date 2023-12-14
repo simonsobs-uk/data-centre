@@ -1,4 +1,4 @@
-{#OpenMPI}
+{#OpenMPI-CVMFS}
 # OpenMPI with CVMFS
 
 This is similar to the previous example but with CVMFS instead.
