@@ -46,7 +46,7 @@ To pick one from the CVMFS, you can see which ones are available first:
 ls /cvmfs/northgrid.gridpp.ac.uk/simonsobservatory/pmpm
 ```
 
-The example given in [](#OpenMPI-CVMFS) uses `/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory/pmpm/so-pmpm-py310-mkl-x86-64-v3-openmpi-20231212`. Feel free to change the date here.
+The example given in [](#OpenMPI-CVMFS) uses `/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory/pmpm/so-pmpm-py310-mkl-x86-64-v3-openmpi-latest`. Feel free to change the date here.
 
 ## Automatic dispatch (Coming soon)
 

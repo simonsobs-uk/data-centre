@@ -16,7 +16,7 @@ print_line() {
 
 ########################################################################
 
-CONDA_PREFIX=/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory/pmpm/so-pmpm-py310-mkl-x86-64-v3-openmpi-20231212
+CONDA_PREFIX=/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory/pmpm/so-pmpm-py310-mkl-x86-64-v3-openmpi-latest
 
 print_double_line
 echo "$(date) activate environment..."
