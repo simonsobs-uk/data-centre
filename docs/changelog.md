@@ -2,6 +2,8 @@
 # Changelog
 
 - v0.3.0: Supporting CVMFS
+    - Deprecation
+        - `/opt/simonsobservatory/pmpm-20230718-Linux-x86_64-OpenMPI.tar.gz` on `vm77` is deprecated. It is scheduled to be removed when `v0.4.0` is released, due in mid-Jan. 2024.
     - doc:
         - refactor quick-start guide w/ CVMFS & grid-storage
             - document how to use CVMFS to load softwares (software deployment)
