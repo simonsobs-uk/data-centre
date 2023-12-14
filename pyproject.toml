@@ -159,3 +159,8 @@ replace = 'release = "{new_version}"'
 filename = "src/souk_data_centre/__init__.py"
 search = '__version__ = "{current_version}"'
 replace = '__version__ = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "docs/maintainer/releasing.md"
+search = 'v{current_version}...main'
+replace = 'v{new_version}...main'
