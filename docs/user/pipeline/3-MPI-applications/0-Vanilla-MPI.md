@@ -23,3 +23,19 @@ We uses an environment from CVMFS here, where we will provide more details in []
 
 We also uses MPICH in this case. Currently we only support Open MPI with the Parallel Universe. But in the Vanilla Universe, there's no such limitation as single node MPI is really that simple.
 :::
+
+Lastly, submit the job as usual by
+
+```sh
+condor_submit mpi.ini
+```
+
+After waiting for a while as the job finished, you can see what happened by reading the contents of `log`, `output`, and `error` as specified in the ClassAd.
+
+See [](#monitor-your-jobs) to see how to monitor the status of your job. For advance use, use this command instead,
+
+```sh
+condor_submit mpi.ini; tail -F mpi.log mpi-0.out mpi-0.err mpi-1.out mpi-1.err
+```
+
+and see [](#tail) for an explanation on what it does.
