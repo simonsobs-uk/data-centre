@@ -1,3 +1,4 @@
+(cvmfs-simple)=
 # CVMFS
 
 According to [CernVM-FS documentation](https://cvmfs.readthedocs.io/en/stable/),
