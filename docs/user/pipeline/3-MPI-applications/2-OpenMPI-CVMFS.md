@@ -23,6 +23,10 @@ In the first file `env.sh`,
 
 We see that it is basically preparing for the software environment following [](#cvmfs-simple).
 
+:::{note}
+See [](#continuous-deployment) for tips on which CVMFS environment to choose.
+:::
+
 The reason this wrapper script has such an interface is because MPI is part of your software environment. Only after you loaded this environment (where you can change to any OpenMPI installation you want as long as it is OpenMPI), the wrapper script can continue to start the OpenMPI launcher to prepare for you to run `mpirun` later.
 
 Then in `mpi.sh`,
