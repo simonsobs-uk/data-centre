@@ -53,7 +53,7 @@ python = ">=3.7"
 
 # extras
 coloredlogs = {optional = true, version = "*"}
-bump2version = {optional = true, version = "*"}
+bump-my-version = {optional = true, version = "*"}
 
 # tests
 coverage = { optional = true, version = "*" }
@@ -71,7 +71,7 @@ sphinx-last-updated-by-git = {optional = true, version = "*"}
 [tool.poetry.extras]
 extras = [
     "coloredlogs",
-    "bump2version",
+    "bump-my-version",
 ]
 tests = [
     "coverage",
@@ -139,3 +139,23 @@ skip = [
     'build',
     'dist',
 ]
+
+[tool.bumpversion]
+current_version = "0.2.0"
+commit = true
+tag = true
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "docs/conf.py"
+search = 'release = "{current_version}"'
+replace = 'release = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "src/souk_data_centre/__init__.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'

@@ -26,6 +26,7 @@
         - Release all available formats on Read the Docs
         - improve `console` in syntax highlighting
         - improve build systems with more targets
+        - upgrade bump2version to bump-my-version
 - v0.2.0: Supporting the grid storage system
     - doc:
         - add sections on the grid storage systems and refactor the IO sections

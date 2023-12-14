@@ -3,7 +3,7 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = docs
 BUILDDIR      = dist/docs
 
-# for bump2version, valid options are: major, minor, patch
+# for bump-my-version, valid options are: major, minor, patch
 PART ?= patch
 
 PORT ?= 8099
@@ -47,7 +47,7 @@ serve: doc
 
 .PHONY: bump opt linkcheck
 bump:
-	bump2version $(PART)
+	bump-my-version bump $(PART)
 	git push --follow-tags
 
 # to be run on vm77 for sharing to other users

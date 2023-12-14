@@ -31,7 +31,7 @@ When authoring the documentation, you may want to have the HTML built at real ti
 make serve
 ```
 
-## Semantic versioning and `bump2version`
+## Semantic versioning and `bump-my-version`
 
 [Semantic versioning](https://semver.org) is followed, with the `MAJOR.MINOR.PATCH` convention as usual. Version `0.x.x` indicates the SO:UK Data Centre is not in final production ready state yet. `MINOR` version is bumped only if there's major functional improvement to the user experience, for example, when CVMFS is deployed. Otherwise, it is always a `PATCH` version release.
 
@@ -39,7 +39,7 @@ make serve
 Before making a new release, check Read the Doc in <https://readthedocs.org/projects/souk-data-centre/builds/> to see if the `latest` build is successful first.
 :::
 
-`bump2version` is used to automatically bump the version string scattered in multiple files. See `.bumpversion.cfg` for details.
+`bump-my-version` is used to automatically bump the version string scattered in multiple files. See `pyproject.toml` under `[tool.bumpversion]` for details.
 
 To make a new release,
 
