@@ -16,7 +16,7 @@ To build the project, `makefile` is used. `make doc` (after you activated the `s
 To ensure the documentation deploys to Read the Doc successfully, make sure there is no warnings when making the documentation. To ensure the cache isn't hiding some errors, you may run
 
 ```sh
-make clean && make doc
+make clean && make all
 ```
 :::
 
