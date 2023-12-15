@@ -11,6 +11,11 @@ You can find the latest releases in <https://github.com/ickc/so-software-environ
 
 ## Explanations of different environments
 
+:::{note}
+This is for advanced users only.
+Feel free to jump to the [](#cd-eg) directly for the recommended generic choice.
+:::
+
 `PREFIX`
 : `cvmfs_northgrid.gridpp.ac.uk_simonsobservatory`: for deploying to CVMFS by Content Managers, see [](#cvmfs-simple) and [](#OpenMPI-CVMFS) for examples.
 : `tmp`: for deploying to `/tmp` directory, see [](#tarball-deployment) for examples.
@@ -36,6 +41,7 @@ MPI implementation
     > MPICH is one of the most popular implementations of MPI. It is used as the foundation for the vast majority of MPI implementations, including IBM MPI (for Blue Gene), Intel MPI, Cray MPI, Microsoft MPI, Myricom MPI, OSU MVAPICH/MVAPICH2, and many others. From [MPICH - Wikipedia](https://en.wikipedia.org/wiki/MPICH#History).
 : [Open MPI](https://en.wikipedia.org/wiki/Open_MPI) is an alternative implementation of MPI. This is currently the only supported MPI implementation by us. See [](#cvmfs-simple) and [](#OpenMPI-CVMFS) for examples.
 
+(cd-eg)=
 ## Examples
 
 To choose an environment for the tarball method where you want to develop the packages and update it, the simplest choice is <https://github.com/ickc/so-software-environment/releases/download/20231214/tmp_so-conda-py310-20231214.tar.gz>. Change the date `20231214` to whichever one you want (today's date for example).
