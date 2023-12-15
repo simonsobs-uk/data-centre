@@ -56,6 +56,7 @@ Point the user to [this section](#obtaining-unix-account) and ask them to send t
 
 ## Software deployments
 
+(CVMFS-pub)=
 ### Publishing to CVMFS
 
 See [above](#content-manager-registration) if you haven't applied for the role of content manager yet.

@@ -1,5 +1,13 @@
 # SO:UK Data Centre Systems
 
+```{toctree}
+:maxdepth: 2
+:hidden:
+:glob:
+
+systems/*
+```
+
 ## Worker nodes at Blackett
 
 As the SO:UK Data Centre is part of Blackett, we have access to [its Tier-2 services](https://www.blackett.manchester.ac.uk/services/). This means by default when we submit jobs from HTCondor, we can have access to the facility as well, where its main users are from ATLAS and LHCb.
