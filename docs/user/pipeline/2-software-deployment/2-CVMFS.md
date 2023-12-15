@@ -52,3 +52,21 @@ The output of this job will be
 ```{literalinclude} 2-CVMFS/cvmfs.out
 :language: console
 ```
+
+## General softwares available from CVMFS
+
+For your convenience, some commonly used system softwares are included in
+`/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory/usr/bin`.
+
+Feel free to include it in your `PATH` such as by
+
+```sh
+export PATH="/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory/usr/bin:$PATH"
+```
+
+This includes `curl`, `ffmpeg`, `git`, `htop`, `nano`, `ranger`, `tar`, `tmux`, `tree`, `zsh`, `zstd`.
+
+For a full list, run `ls /cvmfs/northgrid.gridpp.ac.uk/simonsobservatory/usr/bin`.
+
+The list of softwares may change in the future. Their existence is not guaranteed.
+Please let us know if you have requests on system softwares that you'd like to be supported.
