@@ -9,6 +9,7 @@ maintainer
 presentation
 api/modules
 changelog
+links
 ```
 
 ```{include} ../README.md
