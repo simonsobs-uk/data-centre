@@ -7,6 +7,16 @@ To request an interactive job in the vanilla universe, create a file `example.in
 :language: ini
 ```
 
+Here, we assume the use of the grid storage system.
+Following [](#user-credentials),
+you should run
+
+```sh
+voms-proxy-init --voms souk.ac.uk --valid 168:0
+```
+
+to ensure your temporary AC is valid.
+
 And then submit your job using
 
 ```sh
@@ -20,7 +30,10 @@ Interactive node is in the vanilla universe in HTCondor, meaning that you cannot
 :::
 
 :::{note}
-Right now there is not much you can do with this interactive nodes as you have no access to `HOME`, no software environment loaded, and no data. Any of the software deployment methods or data I/O mentioned later can be applied here.
+The interactive job started in a worker node is in a blank state.
+I.e. it does not see the same `HOME` as in the submit node `vm77`.
+Any of the software deployment methods or data I/O mentioned earlier can be applied here,
+such as the grid storage system and CVMFS.
 :::
 
 ## Explanation
@@ -34,6 +47,9 @@ Right now there is not much you can do with this interactive nodes as you have n
    :::{warning}
     By default, these are number of logical cores. Because of Simultaneous multithreading (SMT), this usually means the no. of physical cores is half of this number. This will have important consequence on over-subscription that we will mention later.
     :::
+
+`use_x509userproxy = True`
+: HTCondor will automatically transfer your AC in submit node to the worker node and set it up correctly such that you can access the grid storage system on this interactive worker node as well.
 
 `queue`
 : This line is a command that tells HTCondor to queue the job. When you submit this ClassAd, the job will be added to the queue and HTCondor will try to find a suitable machine that meets the specified requirements.
