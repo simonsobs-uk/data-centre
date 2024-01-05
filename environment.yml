@@ -8,12 +8,17 @@ channels:
   - conda-forge
 dependencies:
   - python=3.12
+  # extras
+  - bump-my-version
+  # tests
+  - coverage
+  - pytest
+  # docs
+  - furo
+  - linkify-it-py
+  - myst-parser
   - sphinx
   - sphinx-autobuild
   - sphinxcontrib-apidoc
-  - myst-parser
-  - furo
-  - linkify-it-py
-  - bump-my-version
   - pip:
     - sphinx-last-updated-by-git

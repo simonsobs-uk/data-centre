@@ -8,36 +8,31 @@ version = "0.3.0"
 description = "SO:UK Data Centre documentation."
 license = "BSD-3-Clause"
 keywords = [
-    "SO:UK",
     "data centre",
     "HPC",
     "HTC",
+    "SO:UK",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Console",
-    "Intended Audience :: End Users/Desktop",
     "Intended Audience :: Developers",
-    "Topic :: Software Development :: Build Tools",
-    "Topic :: Text Processing :: Filters",
     "License :: OSI Approved :: BSD License",
-    "Operating System :: Unix",
     "Operating System :: POSIX",
-    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: Implementation :: CPython",
-    "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: Utilities",
 ]
-homepage = "https://github.com/simonsobs-uk/data-centre"
+homepage = "https://docs.souk.ac.uk"
 repository = "https://github.com/simonsobs-uk/data-centre"
-documentation = "https://simonsobs-uk.github.io/data-centre"
+documentation = "https://docs.souk.ac.uk"
 authors = ["Kolen Cheung <christian.kolen@gmail.com>"]
 readme = "docs/index.md"
 packages = [
@@ -45,46 +40,46 @@ packages = [
 ]
 include = [
     'LICENSE',
-    'docs/index.md',
+    'README.md',
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.7"
+python = ">=3.8"
 
 # extras
-coloredlogs = {optional = true, version = "*"}
 bump-my-version = {optional = true, version = "*"}
+# coloredlogs = {optional = true, version = "*"}
 
 # tests
 coverage = { optional = true, version = "*" }
 pytest = {optional = true, version = "*"}
 
 # docs: sync this with tox.testenv.docs below
-sphinx = {optional = true, version = "*"}
-myst-parser = {optional = true, version = "*"}
 furo = {optional = true, version = "*"}
-sphinxcontrib-apidoc = {optional = true, version = "*"}
-sphinx-autobuild = {optional = true, version = "*"}
 linkify-it-py = {optional = true, version = "*"}
+myst-parser = {optional = true, version = "*"}
+sphinx = {optional = true, version = "*"}
+sphinx-autobuild = {optional = true, version = "*"}
 sphinx-last-updated-by-git = {optional = true, version = "*"}
+sphinxcontrib-apidoc = {optional = true, version = "*"}
 
 [tool.poetry.extras]
 extras = [
-    "coloredlogs",
     "bump-my-version",
+    # "coloredlogs",
 ]
 tests = [
     "coverage",
     "pytest",
 ]
 docs = [
-    "sphinx",
-    "myst-parser",
     "furo",
-    "sphinxcontrib-apidoc",
-    "sphinx-autobuild",
     "linkify-it-py",
+    "myst-parser",
+    "sphinx-autobuild",
     "sphinx-last-updated-by-git",
+    "sphinx",
+    "sphinxcontrib-apidoc",
 ]
 
 [tool.poetry.scripts]
@@ -93,7 +88,6 @@ souk_arch_info = 'souk.system.arch_info:cli'
 [tool.coverage.paths]
 source = [
     'src',
-    '*/site-packages',
 ]
 
 [tool.coverage.run]
@@ -131,7 +125,6 @@ testpaths = [
 line_length = 120
 known_first_party = 'souk'
 default_section = 'THIRDPARTY'
-forced_separate = 'test_souk_data_centre'
 skip = [
     '.tox',
     '.eggs',
