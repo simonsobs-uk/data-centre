@@ -15,7 +15,8 @@ import archspec.cpu
 import cpuinfo
 import defopt
 import psutil
-from ruamel.yaml import YAML
+import yaml
+import yamlloader
 
 if TYPE_CHECKING:
     from typing import Any
@@ -178,9 +179,12 @@ class System:
     def to_yaml(self) -> str:
         res = StringIO()
         data = self.data
-        ruamel_yaml = YAML(typ="safe")
-        ruamel_yaml.default_flow_style = False
-        ruamel_yaml.dump(data, res)
+        yaml.dump(
+            data,
+            res,
+            Dumper=yamlloader.ordereddict.CSafeDumper,
+            default_flow_style=False,
+        )
         return res.getvalue()
 
     def write_yaml(self, path: Path, **kwargs) -> None:
