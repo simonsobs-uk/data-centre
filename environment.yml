@@ -13,6 +13,8 @@ dependencies:
   - py-cpuinfo
   - python >=3.9
   - ruamel.yaml
+  # build
+  - poetry
   # extras
   - bump-my-version
   # tests
