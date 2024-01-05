@@ -44,6 +44,7 @@ include = [
 ]
 
 [tool.poetry.dependencies]
+archspec = "*"
 python = ">=3.8"
 
 # extras

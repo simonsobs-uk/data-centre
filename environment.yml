@@ -7,6 +7,7 @@ name: souk
 channels:
   - conda-forge
 dependencies:
+  - archspec
   - python
   # extras
   - bump-my-version
