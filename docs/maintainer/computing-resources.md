@@ -8,7 +8,7 @@
 
 Point the user to [this section](#obtaining-unix-account) and ask them to send those info to you.
 
-1. Edit `/home/dthomas/common.yaml` on `vm77`, replace the following `ALL_CAP` variables accordingly,
+1. Edit `/usr/local/etc/staged/common.yaml` on `vm77`, replace the following `ALL_CAP` variables accordingly,
 
     ```yaml
     common::users:
