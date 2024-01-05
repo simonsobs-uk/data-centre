@@ -8,7 +8,11 @@ channels:
   - conda-forge
 dependencies:
   - archspec
-  - python
+  - defopt
+  - psutil
+  - py-cpuinfo
+  - python >=3.8
+  - ruamel.yaml
   # extras
   - bump-my-version
   # tests

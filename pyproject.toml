@@ -45,7 +45,11 @@ include = [
 
 [tool.poetry.dependencies]
 archspec = "*"
+defopt = "*"
+psutil = "*"
+py-cpuinfo = "*"
 python = ">=3.8"
+ruamel.yaml = "*"
 
 # extras
 bump-my-version = {optional = true, version = "*"}
