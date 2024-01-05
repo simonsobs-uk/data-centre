@@ -11,7 +11,7 @@ dependencies:
   - defopt
   - psutil
   - py-cpuinfo
-  - python >=3.8
+  - python >=3.9
   - ruamel.yaml
   # extras
   - bump-my-version
