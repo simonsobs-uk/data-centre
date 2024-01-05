@@ -7,7 +7,7 @@ name: souk
 channels:
   - conda-forge
 dependencies:
-  - python=3.12
+  - python
   # extras
   - bump-my-version
   # tests
