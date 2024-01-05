@@ -20,6 +20,9 @@ from ruamel.yaml import YAML
 if TYPE_CHECKING:
     from typing import Any
 
+    from ruamel.yaml.nodes import Node
+    from ruamel.yaml.representer import BaseRepresenter
+
 
 def sort_nested_dicts(obj: Any) -> Any:
     """
@@ -86,6 +89,14 @@ def get_active_interfaces() -> dict[str, dict[str, Any]]:
         if stats.speed > 0
     }
     return active_interfaces
+
+
+def generic_represent_undefined(representer: BaseRepresenter, data: Any) -> Node:
+    """
+    Generic representer for undefined objects.
+    Represents the object using its str or repr.
+    """
+    return representer.represent_scalar("tag:yaml.org,2002:str", repr(data))
 
 
 class System:
@@ -179,6 +190,7 @@ class System:
         res = StringIO()
         data = self.data
         ruamel_yaml = YAML(typ="safe")
+        ruamel_yaml.representer.add_representer(None, generic_represent_undefined)
         ruamel_yaml.default_flow_style = False
         ruamel_yaml.dump(data, res)
         return res.getvalue()
