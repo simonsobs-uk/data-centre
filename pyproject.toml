@@ -33,7 +33,7 @@ homepage = "https://docs.souk.ac.uk"
 repository = "https://github.com/simonsobs-uk/data-centre"
 documentation = "https://docs.souk.ac.uk"
 authors = ["Kolen Cheung <christian.kolen@gmail.com>"]
-readme = "docs/index.md"
+readme = "README.md"
 packages = [
     { include = "souk", from = "src" },
 ]
