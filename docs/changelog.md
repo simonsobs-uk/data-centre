@@ -1,6 +1,18 @@
 (changelog)=
 # Changelog
 
+- v0.3.1: First PyPI release
+    - Python package:
+        - rename the Python package to souk and publish to PyPI
+        - add `arch_info`
+    - Doc:
+        - add external links
+        - update maintainer guide to add new users
+        - CVMFS
+            - add "General softwares available from CVMFS"
+            - add "Introduction to CVMFS"
+        - add "The upcoming upgrade to Ceph & CephFS"
+        - refactor section for interactive use, anticipating further expansion on this section
 - v0.3.0: Supporting CVMFS
     - Deprecation
         - `/opt/simonsobservatory/pmpm-20230718-Linux-x86_64-OpenMPI.tar.gz` on `vm77` is deprecated. It is scheduled to be removed when `v0.4.0` is released, due in mid-Jan. 2024.
