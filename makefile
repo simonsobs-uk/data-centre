@@ -46,7 +46,7 @@ serve: doc
 # testing ######################################################################
 
 test:
-	TEXPDEBUG=1 python \
+	python \
 		-m coverage run \
 		-m pytest -vv $(PYTESTARGS)
 
