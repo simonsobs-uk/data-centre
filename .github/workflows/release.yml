@@ -1,0 +1,28 @@
+name: PyPI Releases
+on:
+  push:
+    tags:
+      - v*
+jobs:
+  pypi-publish:
+    defaults:
+      run:
+        shell: bash -l {0}
+    name: upload release to PyPI
+    runs-on: ubuntu-latest
+    # Specifying a GitHub environment is optional, but strongly encouraged
+    environment: release
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          python-version: 3.12
+          mamba-version: "*"
+          channels: conda-forge
+          environment-file: environment.yml
+      - run: poetry build
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
