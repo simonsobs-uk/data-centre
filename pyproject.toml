@@ -49,7 +49,7 @@ defopt = "*"
 psutil = "*"
 py-cpuinfo = "*"
 python = ">=3.8"
-ruamel.yaml = "*"
+"ruamel.yaml" = "*"
 
 # extras
 bump-my-version = {optional = true, version = "*"}
