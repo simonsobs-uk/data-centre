@@ -12,16 +12,16 @@ Point the user to [this section](#obtaining-unix-account) and ask them to send t
 
     ```yaml
     common::users:
-    USER_NAME:
+      USER_NAME:
         uid: UID
         comment: FIRST_NAME LAST_NAME
-        groups: simonsobservatory
         home: /home/USER_NAME
         keys:
-        - 'ssh-ed25519 KEY_VALUE COMMENT'
-        password: '$6$...$...'
+          - "ssh-ed25519 KEY_VALUE COMMENT"
+        password: "$6$...$..."
         groups:
-        - sudo
+          - sudo
+          - simonsobservatory
     ```
 
     :::{note}
