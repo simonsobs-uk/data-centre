@@ -43,6 +43,16 @@ serve: doc
 		--delay 0 \
 		"$(SOURCEDIR)" "$(BUILDDIR)"
 
+# testing ######################################################################
+
+test:
+	TEXPDEBUG=1 python \
+		-m coverage run \
+		-m pytest -vv $(PYTESTARGS)
+
+coverage: test
+	coverage report
+
 # releasing ####################################################################
 
 .PHONY: bump opt linkcheck

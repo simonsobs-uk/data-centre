@@ -87,7 +87,8 @@ docs = [
     "sphinx-last-updated-by-git",
 ]
 
-# [tool.poetry.scripts]
+[tool.poetry.scripts]
+souk_arch_info = 'souk.system.arch_info:cli'
 
 [tool.coverage.paths]
 source = [
@@ -99,7 +100,6 @@ source = [
 branch = true
 source = [
     'src',
-    'tests',
 ]
 relative_files = true
 
