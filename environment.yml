@@ -12,8 +12,7 @@ dependencies:
   - psutil
   - py-cpuinfo
   - python >=3.8
-  - pyyaml
-  - yamlloader
+  - ruamel.yaml
   # extras
   - bump-my-version
   # tests
