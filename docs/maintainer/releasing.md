@@ -2,7 +2,7 @@
 
 ## Edit changelog
 
-Located at `docs/changelog.md`. Use <https://github.com/simonsobs-uk/data-centre/compare/v0.3.1...main> to help see what's changed for example.
+Located at `docs/changelog.md`. Use <https://github.com/simonsobs-uk/data-centre/compare/v0.3.2...main> to help see what's changed for example.
 
 ## Building
 
