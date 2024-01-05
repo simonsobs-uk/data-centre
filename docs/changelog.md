@@ -43,7 +43,7 @@
         - add maintainer sections
     - misc. software related:
         - fix discrepancies between `environment.yml` and `pyproject.toml`
-        - fix `__version__` in `souk_data_centre`
+        - fix `__version__` in `souk`
 - v0.1.1: Start writing developer guide
     - documentation enhancements and bug fixes:
         - add sections on tips, including how to monitor jobs and the use of `tail` to stream real time stdout/stderr.

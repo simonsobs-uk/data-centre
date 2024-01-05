@@ -6,8 +6,8 @@ This project has a few major components:
 
 : documentation of the SO:UK Data Centre with a focus on software deployment.
 
-`src/souk_data_centre/`
-: a Python library under the namespace of `souk_data_centre`, intended to be convenient utilities to assist interacting and using the SO:UK Data Centre resource. It is currently empty but is required to be installed in order for the documentation to be built successfully (because API doc is built automatically).
+`src/souk/`
+: a Python library under the namespace of `souk`, intended to be convenient utilities to assist interacting and using the SO:UK Data Centre resource. It is currently empty but is required to be installed in order for the documentation to be built successfully (because API doc is built automatically).
 
 ## Installing the environment
 

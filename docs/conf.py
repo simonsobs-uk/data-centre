@@ -48,7 +48,7 @@ myst_enable_extensions = [
 ]
 
 # https://github.com/sphinx-contrib/apidoc
-apidoc_module_dir = "../src/souk_data_centre"
+apidoc_module_dir = "../src/souk"
 apidoc_separate_modules = True
 apidoc_module_first = True
 

@@ -3,7 +3,7 @@ requires = ["poetry_core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "souk_data_centre"
+name = "souk"
 version = "0.3.0"
 description = "SO:UK Data Centre documentation."
 license = "BSD-3-Clause"
@@ -41,7 +41,7 @@ documentation = "https://simonsobs-uk.github.io/data-centre"
 authors = ["Kolen Cheung <christian.kolen@gmail.com>"]
 readme = "docs/index.md"
 packages = [
-    { include = "souk_data_centre", from = "src" },
+    { include = "souk", from = "src" },
 ]
 include = [
     'LICENSE',
@@ -129,7 +129,7 @@ testpaths = [
 
 [tool.isort]
 line_length = 120
-known_first_party = 'souk_data_centre'
+known_first_party = 'souk'
 default_section = 'THIRDPARTY'
 forced_separate = 'test_souk_data_centre'
 skip = [
@@ -156,7 +156,7 @@ search = 'release = "{current_version}"'
 replace = 'release = "{new_version}"'
 
 [[tool.bumpversion.files]]
-filename = "src/souk_data_centre/__init__.py"
+filename = "src/souk/__init__.py"
 search = '__version__ = "{current_version}"'
 replace = '__version__ = "{new_version}"'
 
