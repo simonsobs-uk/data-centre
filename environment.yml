@@ -3,7 +3,7 @@
 # conda activate soukdc
 # update using
 # conda env update --name soukdc --file environment.yml --prune
-name: soukdc
+name: souk
 channels:
   - conda-forge
 dependencies:
