@@ -3,7 +3,7 @@ from __future__ import annotations
 from souk.system.arch_info import System
 
 
-def test_System():
+def test_System() -> None:
     """Just test that round-trip is identical.
     I.e. whatever written can be re-created from the written data.
     """

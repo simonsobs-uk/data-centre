@@ -195,7 +195,7 @@ class System:
         ruamel_yaml.dump(data, res)
         return res.getvalue()
 
-    def write_yaml(self, path: Path, **kwargs) -> None:
+    def write_yaml(self, path: Path, **kwargs: dict[str, Any]) -> None:
         path = Path(path)
         path.write_text(self.to_yaml(**kwargs), encoding="utf-8")
 
