@@ -20,7 +20,7 @@ CONDA_PREFIX=/cvmfs/northgrid.gridpp.ac.uk/simonsobservatory/pmpm/so-pmpm-py310-
 
 print_double_line
 echo "$(date) activate environment..."
-. "$CONDA_PREFIX/bin/activate" "$CONDA_PREFIX"
+. "$CONDA_PREFIX/bin/activate"
 print_line
 echo "Python is available at:"
 which python
