@@ -15,3 +15,6 @@ examples/arch_info/**/*.yml
 examples/arch_info/vanilla/**/*.ini
 examples/arch_info/vanilla/**/*.yml
 .coverage
+examples/arch_info/*.csv
+examples/arch_info/*.html
+examples/arch_info/*.md

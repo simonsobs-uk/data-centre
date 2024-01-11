@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import platform
 import subprocess
+from dataclasses import dataclass
 from functools import cached_property
 from io import StringIO
 from pathlib import Path
@@ -14,6 +15,7 @@ import archspec
 import archspec.cpu
 import cpuinfo
 import defopt
+import pandas as pd
 import psutil
 from ruamel.yaml import YAML
 
@@ -220,6 +222,89 @@ class System:
         self.active_interfaces = data["psutil.net_if_stats"]
         return self
 
+    @classmethod
+    def from_yaml(cls, path: Path) -> System:
+        path = Path(path)
+        data = YAML().load(path.read_text(encoding="utf-8"))
+        return cls.from_dict(data)
+
+
+@dataclass
+class Systems:
+    systems: list[System]
+
+    @classmethod
+    def from_yaml(cls, *paths: Path) -> Systems:
+        return cls([System.from_yaml(path) for path in paths])
+
+    @property
+    def data(self) -> list[dict[str, Any]]:
+        return [system.data for system in self.systems]
+
+    @cached_property
+    def dataframe(self) -> pd.DataFrame:
+        df = pd.json_normalize(self.data)
+        df.set_index("uname.node", inplace=True)
+        df.sort_index(inplace=True)
+        return df
+
+    def dataframe_simplified(
+        self,
+        columns: list[str] = [
+            "cpuinfo.brand_raw",
+            "archspec.cpu.host.vendor",
+            "archspec.cpu.host.name",
+            "archspec.cpu.host.generic.name",
+            "system_cpu_info.Socket(s)",
+            "psutil.cpu_count.logical",
+            "psutil.cpu_count.physical",
+            "psutil.virtual_memory.total",
+            "psutil.swap_memory.total",
+        ],
+    ) -> pd.DataFrame:
+        df = self.dataframe[columns].copy()
+        df.index.name = "hostname"
+        # cast type
+        for key in (
+            "psutil.cpu_count.physical",
+            "psutil.cpu_count.logical",
+            "system_cpu_info.Socket(s)",
+            "psutil.virtual_memory.total",
+            "psutil.swap_memory.total",
+        ):
+            df[key] = df[key].astype(int)
+        # to GiB
+        for key in ("psutil.virtual_memory.total", "psutil.swap_memory.total"):
+            df[key] = df[key] / 1024**3
+        df.rename(
+            columns={
+                "cpuinfo.brand_raw": "CPU model",
+                "archspec.cpu.host.vendor": "CPU vendor",
+                "archspec.cpu.host.name": "CPU generation",
+                "archspec.cpu.host.generic.name": "CPU microarchitecture",
+                "system_cpu_info.Socket(s)": "No. of sockets",
+                "psutil.cpu_count.logical": "Total no. of logical cores",
+                "psutil.cpu_count.physical": "Total no. of physical cores",
+                "psutil.virtual_memory.total": "Total memory (GiB)",
+                "psutil.swap_memory.total": "Total swap (GiB)",
+            },
+            inplace=True,
+        )
+        # round
+        for key in ("Total memory (GiB)", "Total swap (GiB)"):
+            df[key] = df[key].round(0).astype(int)
+        return df
+
+    def to_csv(
+        self,
+        path: Path,
+        simplified: bool = False,
+    ) -> None:
+        if simplified:
+            self.dataframe_simplified().to_csv(path)
+        else:
+            self.dataframe.to_csv(path)
+
 
 def arch_info(
     *,
@@ -230,9 +315,24 @@ def arch_info(
     system.write_yaml(path)
 
 
+def collect_arch_info(
+    *paths: Path,
+    output: Path = Path("arch_info.csv"),
+    simplified: bool = False,
+) -> None:
+    """Collects the system information collected by arch-info and writes it to the CSV file."""
+    systems = Systems.from_yaml(*paths)
+    systems.to_csv(output, simplified=simplified)
+
+
 def cli() -> None:
     """The command line interface for arch_info."""
-    defopt.run(arch_info, strict_kwonly=False, show_defaults=True, show_types=True)
+    defopt.run(
+        [arch_info, collect_arch_info],
+        strict_kwonly=False,
+        show_defaults=True,
+        show_types=True,
+    )
 
 
 if __name__ == "__main__":

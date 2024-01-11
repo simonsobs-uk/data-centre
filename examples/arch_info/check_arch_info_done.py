@@ -12,6 +12,7 @@ def main(
 
     Args:
         path: Path to hostnames.
+        negate: Negate the check.
     """
     hostnames = path.read_text(encoding="utf-8").strip().split("\n")
     for universe in ["vanilla", "parallel"]:
@@ -19,8 +20,10 @@ def main(
         for hostname in hostnames:
             stem = f"arch_info_{hostname}"
             file_expected = directory / f"{stem}.yml"
-            if not file_expected.exists():
-                print(f"{hostname}\tnot finished in {universe} universe")
+            if file_expected.exists():
+                print(f"Done: {hostname}\t in {universe} universe")
+            else:
+                print(f"Miss: {hostname}\t in {universe} universe")
 
 
 def cli() -> None:
