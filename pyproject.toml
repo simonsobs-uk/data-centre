@@ -47,6 +47,7 @@ include = [
 "ruamel.yaml" = "*"
 archspec = "*"
 defopt = "*"
+pandas = "*"
 psutil = "*"
 py-cpuinfo = "*"
 python = ">=3.9"

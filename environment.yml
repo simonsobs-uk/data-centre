@@ -10,6 +10,7 @@ dependencies:
   - archspec
   - defopt
   - fire
+  - pandas
   - psutil
   - py-cpuinfo
   - python >=3.9
