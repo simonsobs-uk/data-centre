@@ -10,4 +10,8 @@ docs/api/
 docs/user/pipeline/4-IO/1-grid-storage-system-2/ac.pem
 docs/user/pipeline/4-IO/1-grid-storage-system-2/hello-davs.txt
 docs/user/pipeline/4-IO/1-grid-storage-system-2/hello-root.txt
+examples/arch_info/**/*.ini
+examples/arch_info/**/*.yml
+examples/arch_info/vanilla/**/*.ini
+examples/arch_info/vanilla/**/*.yml
 .coverage

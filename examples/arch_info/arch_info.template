@@ -1,0 +1,25 @@
+requirements = (Machine == "{hostname}")
+
+universe = {universe}
+
+machine_count = 1
+request_cpus = 1
+request_disk = 1G
+request_memory = 1G
+
+executable = ../arch_info.sh
+arguments = --path {stem}.yml
+
+log = {stem}.log
+output = {stem}.out
+error = {stem}.err
+stream_output = False
+stream_error = False
+
+transfer_input_files = ../../../src/souk/system/arch_info.py
+should_transfer_files = yes
+when_to_transfer_output = ON_EXIT
+# transfer_output_files =
+# use_x509userproxy = True
+
+queue
