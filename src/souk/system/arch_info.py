@@ -223,7 +223,7 @@ class System:
 
 def arch_info(
     *,
-    path: Path = Path(f"arch_info_{platform.node()}.yaml"),
+    path: Path = Path(f"arch_info_{platform.node()}.yml"),
 ) -> None:
     """Writes the system information to the given path in YAML."""
     system = System()
