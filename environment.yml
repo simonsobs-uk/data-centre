@@ -9,6 +9,7 @@ channels:
 dependencies:
   - archspec
   - defopt
+  - fire
   - psutil
   - py-cpuinfo
   - python >=3.9

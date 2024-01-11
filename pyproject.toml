@@ -43,12 +43,13 @@ include = [
 ]
 
 [tool.poetry.dependencies]
+"fire" = "*"
+"ruamel.yaml" = "*"
 archspec = "*"
 defopt = "*"
 psutil = "*"
 py-cpuinfo = "*"
 python = ">=3.9"
-"ruamel.yaml" = "*"
 
 # extras
 bump-my-version = {optional = true, version = "*"}
