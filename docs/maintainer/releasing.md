@@ -8,7 +8,7 @@ Located at `docs/changelog.md`. Use <https://github.com/simonsobs-uk/data-centre
 
 For the documentation, we aim to deliver it in these formats: HTML, ePub, PDF.
 
-Per commit in `main` branch, if it builds successfully, it will deploy to the `latest` version in Read the Doc: <https://souk-data-centre.readthedocs.io/en/latest/>, and also in GitHub Pages: <https://simonsobs-uk.github.io/data-centre/>.
+Per commit in `main` branch, if it builds successfully, it will deploy to the `latest` version in Read the Doc: <https://docs.souk.ac.uk/en/latest/>, and also in GitHub Pages: <https://simonsobs-uk.github.io/data-centre/>.
 
 To build the project, `makefile` is used. `make doc` (after you activated the `soukdc` conda environment) should builds the HTML documentation.
 

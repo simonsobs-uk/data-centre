@@ -1,7 +1,7 @@
 # SO:UK Data Centre
 
 ![GitHub Actions](https://github.com/simonsobs-uk/data-centre/workflows/Unit%20tests/badge.svg)
-[![Documentation Status](https://readthedocs.org/projects/souk-data-centre/badge/?version=latest)](https://souk-data-centre.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/souk-data-centre/badge/?version=latest)](https://docs.souk.ac.uk/en/latest/?badge=latest)
 [![Documentation Status](https://github.com/simonsobs-uk/data-centre/workflows/GitHub%20Pages/badge.svg)](https://simonsobs-uk.github.io/data-centre)
 
 [![GitHub Releases](https://img.shields.io/github/tag/simonsobs-uk/data-centre.svg?label=github+release)](https://github.com/simonsobs-uk/data-centre/releases)
@@ -23,7 +23,7 @@ The GitHub repository [simonsobs-uk/data-centre](https://github.com/simonsobs-uk
 
 To access our documentation, you have a few options, (in the order from convenience to advanced usages):
 
-1. [SO:UK Data Centre documentation at Read the Docs](https://souk-data-centre.readthedocs.io/en/latest/). This gives you access to all versions of SO:UK Data Centre documentations, as well as multiple output formats including [HTML](https://souk-data-centre.readthedocs.io/_/downloads/en/latest/htmlzip/), [ePub](https://souk-data-centre.readthedocs.io/_/downloads/en/latest/epub/), [PDF](https://souk-data-centre.readthedocs.io/_/downloads/en/latest/pdf/).
+1. [SO:UK Data Centre documentation at Read the Docs](https://docs.souk.ac.uk/en/latest/). This gives you access to all versions of SO:UK Data Centre documentations, as well as multiple output formats including [HTML](https://docs.souk.ac.uk/_/downloads/en/latest/htmlzip/), [ePub](https://docs.souk.ac.uk/_/downloads/en/latest/epub/), [PDF](https://docs.souk.ac.uk/_/downloads/en/latest/pdf/).
 2. [SO:UK Data Centre documentation at GitHub Pages](https://simonsobs-uk.github.io/data-centre/) which is HTML only and points to the latest commits only.
 3. [SO:UK Data Centre documentation at GitHub Releases](https://github.com/simonsobs-uk/data-centre/releases/latest). This gives you additional output formats such as [man page](https://github.com/simonsobs-uk/data-centre/releases/latest/download/soukdatacentre.1) and [plain text](https://github.com/simonsobs-uk/data-centre/releases/latest/download/soukdatacentre.txt).
 

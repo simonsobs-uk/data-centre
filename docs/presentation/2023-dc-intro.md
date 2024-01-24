@@ -73,12 +73,12 @@ To over-simplify, the amount of memory needed in a scientific application dictat
 
 ### Live demo
 
-- [SO:UK Data Centre 0.2.0 documentation](https://souk-data-centre.readthedocs.io/en/latest/)
-    - [1.1. Onboarding - SO:UK Data Centre 0.2.0 documentation](https://souk-data-centre.readthedocs.io/en/latest/user/onboarding/)
-    - [1.2. Quick start - SO:UK Data Centre 0.2.0 documentation](https://souk-data-centre.readthedocs.io/en/latest/user/quick-start/)
-    - [1.3. Running pipelines - SO:UK Data Centre 0.2.0 documentation](https://souk-data-centre.readthedocs.io/en/latest/user/pipeline/#running-pipelines)
-        - [1.3.3.1. OpenMPI - SO:UK Data Centre 0.2.0 documentation](https://souk-data-centre.readthedocs.io/en/latest/user/pipeline/3-MPI-applications/1-OpenMPI/#openmpi)
-        - [1.3.4.2. The grid storage system - SO:UK Data Centre 0.2.0 documentation](https://souk-data-centre.readthedocs.io/en/latest/user/pipeline/4-IO/1-grid-storage-system/)
+- [SO:UK Data Centre 0.2.0 documentation](https://docs.souk.ac.uk/en/latest/)
+    - [1.1. Onboarding - SO:UK Data Centre 0.2.0 documentation](https://docs.souk.ac.uk/en/latest/user/onboarding/)
+    - [1.2. Quick start - SO:UK Data Centre 0.2.0 documentation](https://docs.souk.ac.uk/en/latest/user/quick-start/)
+    - [1.3. Running pipelines - SO:UK Data Centre 0.2.0 documentation](https://docs.souk.ac.uk/en/latest/user/pipeline/#running-pipelines)
+        - [1.3.3.1. OpenMPI - SO:UK Data Centre 0.2.0 documentation](https://docs.souk.ac.uk/en/latest/user/pipeline/3-MPI-applications/1-OpenMPI/#openmpi)
+        - [1.3.4.2. The grid storage system - SO:UK Data Centre 0.2.0 documentation](https://docs.souk.ac.uk/en/latest/user/pipeline/4-IO/1-grid-storage-system/)
 
 ## To be explored (How)
 
@@ -104,11 +104,11 @@ To over-simplify, the amount of memory needed in a scientific application dictat
 
 ### Documentation
 
-Documentation available at [SO:UK Data Centre 0.2.0 documentation](https://souk-data-centre.readthedocs.io/en/latest/). How to use
+Documentation available at [SO:UK Data Centre 0.2.0 documentation](https://docs.souk.ac.uk/en/latest/). How to use
 
-- [Search](https://souk-data-centre.readthedocs.io/en/latest/search/?q=htcondor)
+- [Search](https://docs.souk.ac.uk/en/latest/search/?q=htcondor)
 - Different formats are available,
-    - [PDF](https://souk-data-centre.readthedocs.io/_/downloads/en/latest/pdf/) / [ePub](https://souk-data-centre.readthedocs.io/_/downloads/en/latest/epub/) / [single page HTML](https://souk-data-centre.readthedocs.io/_/downloads/en/latest/htmlzip/) from ReadTheDocs
+    - [PDF](https://docs.souk.ac.uk/_/downloads/en/latest/pdf/) / [ePub](https://docs.souk.ac.uk/_/downloads/en/latest/epub/) / [single page HTML](https://docs.souk.ac.uk/_/downloads/en/latest/htmlzip/) from ReadTheDocs
     - [man page](https://github.com/simonsobs-uk/data-centre/releases/latest/download/soukdatacentre.1) and [plain text](https://github.com/simonsobs-uk/data-centre/releases/latest/download/soukdatacentre.txt) available from GitHub Releases
 - Single file output are well-suited to Chat with LLMs:
     - [ChatGPT](https://chat.openai.com/share/91e6186b-dc26-4197-982a-815405f81627)
