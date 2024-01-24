@@ -65,7 +65,7 @@ opt:
 	cp -f bin/xrootdfs.sh /opt/simonsobservatory
 
 linkcheck:
-	linkcheck --external --no-check-anchors https://simonsobs-uk.github.io/data-centre
+	linkcheck --external --no-check-anchors https://docs-ci.souk.ac.uk
 
 linkcheck-local:
 	linkcheck --external --no-check-anchors http://127.0.0.1:$(PORT)
