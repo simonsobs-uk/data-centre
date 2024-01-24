@@ -95,7 +95,7 @@ To over-simplify, the amount of memory needed in a scientific application dictat
     - For NERSC, [Job Arrays](https://docs.nersc.gov/jobs/examples/#job-arrays) is a better way to launch such jobs, minimizing node-hours (because of load-balancing) and shortening the turn-around time (as the scheduler can allocate smaller jobs fitting into "cracks" earlier). This also maximize the utilization of NERSC, a cost hidden from your allocation.
 - Recommended workflow: each submitted job should be "atomic", in the sense that it is the smallest piece of independent job that requires some sort of coordination within such job.
     - That means there's a lot of small jobs ($O(10,000)$ or more) you need to submit, a workflow manager is needed.
-    - [Workflow managers](https://docs.nersc.gov/jobs/workflow-tools/) are independent of, often cooperate with, job managers. Example job managers are SLURM at NERSC, HTCondor in SO:UK Data Centre. Example workflow managers would be make (GNU make, makefile), snakemake, GNU Parallel, Parsl, Nextflow, of DAGMan in HTCondor.
+    - [Workflow managers](https://docs.nersc.gov/jobs/workflow/) are independent of, often cooperate with, job managers. Example job managers are SLURM at NERSC, HTCondor in SO:UK Data Centre. Example workflow managers would be make (GNU make, makefile), snakemake, GNU Parallel, Parsl, Nextflow, of DAGMan in HTCondor.
     - Roll-your-own workflow manager are discouraged. Complexities of workflow managers:
         - Is it job-manager agnostics? Is the presence SLURM implicitly assumed?
         - How job dependencies are handled? Is the dependency graphs automatically generated and jobs submitted? E.g. after maps are made, how the next pipeline with MASTER is launched?
