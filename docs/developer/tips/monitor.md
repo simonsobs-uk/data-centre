@@ -1,5 +1,7 @@
+# Job managements
+
 {#monitor-your-jobs}
-# Monitor your jobs
+## Monitor your jobs
 
 In HTCondor, you can use
 
@@ -24,3 +26,26 @@ condor_watch_q
 ```
 
 Both approach has their pros and cons and you are welcome to try which one suits your purpose better.
+
+## Killing your jobs
+
+After you submitted a job, you obtained a job id.
+You can also retrieve this job id from the `condor_q` command above.
+You can kill this job by using,
+
+```sh
+condor_rm $ID
+# such as...
+condor_rm 1983
+```
+
+Or you can also kill all jobs that is still in the queue created by you:
+
+```sh
+condor_rm $USER
+```
+
+:::{warning}
+This is destructive!
+All your submitted jobs will disappear and there's no way to bring them back except by resubmitting all of them again.
+:::
