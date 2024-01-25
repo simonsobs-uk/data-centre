@@ -1,8 +1,12 @@
 VANILLA_YML = $(shell find vanilla -name '*.yml')
 PARALLEL_YML = $(shell find parallel -name '*.yml')
 
-default:
+.PHONY: default
+default: hostnames.txt
+hostnames.txt:
 	./gen_arch_info_classad.py arch_info.template -p hostnames.txt
+
+.PHONY: check diff submit clean
 check:
 	./check_arch_info_done.py | sort
 diff:
@@ -29,6 +33,7 @@ clean:
 		-name '*.ini' \
 	\) -delete
 
+.PHONY: csv
 csv: vanilla.csv parallel.csv
 vanilla.csv: $(VANILLA_YML)
 	find vanilla -name '*.yml' -exec ../../src/souk/system/arch_info.py collect-arch-info -o $@ {} +
