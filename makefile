@@ -72,6 +72,16 @@ linkcheck-local:
 
 ################################################################################
 
+.PHONY: format format-py format-ini
+
+format: format-py format-ini
+format-py:
+	autoflake --in-place --recursive --expand-star-imports --remove-all-unused-imports --ignore-init-module-imports --remove-duplicate-keys --remove-unused-variables .
+	black .
+	isort .
+format-ini:
+	find docs -iname '*.ini' -exec ini_formatter --align-column --inplace {} \;
+
 .PHONY: clean
 clean:
 	rm -rf dist
