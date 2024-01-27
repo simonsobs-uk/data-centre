@@ -13,7 +13,7 @@ def print_data(
     align_column: bool = False,
 ) -> None:
     """Print data to file."""
-    max_len: int = max(len(item[0]) for item in data) if align_column else -1
+    max_len: int = max(len(item[0]) for item in data) if align_column else 0
     for key, value in data:
         if value:
             print(f"{key:{max_len}} = {value}", file=f)
