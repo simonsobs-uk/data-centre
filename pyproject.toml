@@ -90,6 +90,7 @@ docs = [
 
 [tool.poetry.scripts]
 souk_arch_info = 'souk.system.arch_info:cli'
+ini_formatter = 'souk.util.cli.ini_formatter:cli'
 
 [tool.coverage.paths]
 source = [
