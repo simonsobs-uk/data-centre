@@ -80,7 +80,7 @@ format-py:
 	black .
 	isort .
 format-ini:
-	find docs -iname '*.ini' -exec ini_formatter --align-column --inplace {} \;
+	ini_formatter --align-column '**/*.ini'
 
 .PHONY: clean
 clean:

@@ -1,35 +1,23 @@
 #!/usr/bin/env python
 
-import sys
+from glob import glob
 from pathlib import Path
-from typing import TextIO
 
 import defopt
 
 
-def print_data(
-    f: TextIO,
-    data: list[tuple[str, str]],
-    align_column: bool = False,
-) -> None:
-    """Print data to file."""
-    max_len: int = max(len(item[0]) for item in data) if align_column else 0
-    for key, value in data:
-        if value:
-            print(f"{key:{max_len}} = {value}", file=f)
-        else:
-            print(key, file=f)
-
-
-def main(
+def ini_formatter(
     path: Path,
     *,
     align_column: bool = False,
     sort: bool = False,
-    inplace: bool = False,
-    output: Path | None = None,
 ) -> None:
-    """Format INI file."""
+    """Format INI file inplace.
+
+    param: path: Path to INI file.
+    param: align_column: Align column.
+    param: sort: Sort keys
+    """
     data: list[tuple[str, str]] = []
     with path.open(encoding="utf-8") as f:
         for line in f:
@@ -42,13 +30,33 @@ def main(
         # filter empty lines
         data = [line for line in data if line != ("", "")]
         data.sort(key=lambda x: x[0])
-    if inplace:
-        output = path
-    if output is None:
-        print_data(sys.stdout, data, align_column=align_column)
-    else:
-        with output.open("w", encoding="utf-8") as f:
-            print_data(f, data, align_column=align_column)
+    max_len: int = max(len(item[0]) for item in data) if align_column else 0
+    with path.open("w", encoding="utf-8") as f:
+        for key, value in data:
+            if value:
+                print(f"{key:{max_len}} = {value}", file=f)
+            else:
+                print(key, file=f)
+
+
+def main(
+    glob_pattern: str,
+    *,
+    align_column: bool = False,
+    sort: bool = False,
+) -> None:
+    """Format INI file inplace.
+
+    param: glob_pattern: Glob pattern to match files.
+    param: align_column: Align column.
+    param: sort: Sort keys
+    """
+    for p in glob(glob_pattern, recursive=True):
+        ini_formatter(
+            Path(p),
+            align_column=align_column,
+            sort=sort,
+        )
 
 
 def cli() -> None:
