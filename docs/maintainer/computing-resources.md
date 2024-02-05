@@ -32,6 +32,16 @@ Point the user to [this section](#obtaining-unix-account) and ask them to send t
 
 2. Tell Robert to update.
 
+3. To check if the config is populated, check the file `/etc/passwd` and see if the new users is there. If it does, the user should be ready to go.
+
+:::{warning}
+The content of this file contains sensitive information,
+such as salted, hashed passwords,
+which is configured to be readable only to `root` at `/etc/shadow`.
+Hence, the config file `/usr/local/etc/staged/common.yaml` should be treated
+with the same level of permission.
+:::
+
 (content-manager-registration)=
 ### Register as a new content manager (CVMFS)
 
