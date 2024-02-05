@@ -46,7 +46,7 @@ Provide the following info and send it to one of us:
     cat ~/.ssh/id_rsa.pub
     ```
 
-4. (Optional) if you want to use a password, follow the following procedure to generate a hash. *On your local machine* (`vm77`'s `openssh` is too old), enter this line **beginning with a space** (such that this line would not be saved in your history file[^history]),
+4. (Optional) if you want to use a password, follow the following procedure to generate a hash. *On your local machine* (`vm77`'s `openssh` is too old), enter this line,
 
     ```console
     $ openssl passwd -6 -salt $(openssl rand -base64 16)
@@ -60,6 +60,3 @@ Provide the following info and send it to one of us:
 Then email Robert the location of this file (`/opt/$USER` expanded) and telling him that it is your salted, SHA-512 hashed password.
 
 For maintainers to add this new user, go to [this section](#new-users).
-
-
-[^history]: For this to work, you may need to `setopt HIST_IGNORE_SPACE` first.
