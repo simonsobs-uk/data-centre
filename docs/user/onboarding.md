@@ -46,7 +46,7 @@ Provide the following info and send it to one of us:
     cat ~/.ssh/id_rsa.pub
     ```
 
-4. (Optional) For typical users, please skip this step. If you need `sudo`, follow the following procedure to generate a hash. *On your local machine* (`vm77`'s `openssh` is too old), enter this line,
+4. (Optional) For typical users, please skip this step. If you need `sudo`, follow the following procedure to generate a salted, hashed password. *On your local machine* (`vm77`'s `openssh` is too old), enter this line,
 
     ```console
     $ openssl passwd -6 -salt $(openssl rand -base64 16)
