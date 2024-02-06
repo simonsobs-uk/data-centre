@@ -18,7 +18,7 @@ The recommended way to connect to our submit node would be to edit your ssh conf
 Host blackett
     HostName vm77.tier2.hep.manchester.ac.uk
     User $USER
-    IdentityFile ~/.ssh/id_ed25519.pub
+    IdentityFile ~/.ssh/id_ed25519
 
 # this is for ssh into worker nodes on Blackett which loads its own temporary keys
 Host condor-job.*
