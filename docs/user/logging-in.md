@@ -18,7 +18,6 @@ The recommended way to connect to our submit node would be to edit your ssh conf
 Host blackett
     HostName vm77.tier2.hep.manchester.ac.uk
     User $USER
-    IdentityFile ~/.ssh/id_ed25519
 
 # this is for ssh into worker nodes on Blackett which loads its own temporary keys
 Host condor-job.*
@@ -26,6 +25,41 @@ Host condor-job.*
     AddKeysToAgent no
 ```
 
-Replace `~/.ssh/id_ed25519.pub` with `~/.ssh/id_rsa.pub` if necessary, matching the one you sent to us from [the previous section](#obtaining-unix-account).
-
 You can then `ssh blackett` instead.
+
+:::{tip}
+If you cannot log in at this point,
+first, check which key is the one you sent to us from [the previous section](#obtaining-unix-account).
+For example, if the key you sent starts with `ssh-ed25519`,
+then probably you are using `~/.ssh/id_ed25519.pub`.
+If it starts with `ssh-rsa`,
+then probably you are using `~/.ssh/id_rsa.pub`.
+
+You can also list all your available keys by running this command:
+
+```sh
+ find ~/.ssh -name '*.pub'
+```
+
+Knowing that, you can add a line specifying `IdentityFile` to your ssh config:
+
+```
+Host blackett
+    HostName vm77.tier2.hep.manchester.ac.uk
+    User $USER
+    IdentityFile ~/.ssh/id_ed25519
+...
+```
+
+Replace `id_ed25519` with `id_rsa` if you sent us a `ssh-rsa` key instead.
+
+If it still does not work for you, run the below command and send us the text file `ssh-debug.txt`:
+
+```sh
+find ~/.ssh -name '*.pub' > ssh-debug.txt
+echo '===' >> ssh-debug.txt
+cat ~/.ssh/config >> ssh-debug.txt
+echo '===' >> ssh-debug.txt
+ssh blackett -vvv >> ssh-debug.txt 2>&1
+```
+:::
