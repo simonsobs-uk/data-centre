@@ -38,6 +38,7 @@ Provide the following info and send it to one of us:
 
 0. Your email address, GitHub account name, and preferred name.
 1. Your preferred UNIX username. If you don't know, run `echo $USER` in your terminal and copy that.
+    A recommended pattern is first initial then surname. For example, `jdoe`.
 2. Your first name and last name, same as the one used above.
 3. Copy your ssh public key(s) to us. For example, you can run the following commands and copy the first available result:
 
