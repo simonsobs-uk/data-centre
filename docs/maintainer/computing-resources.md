@@ -8,6 +8,8 @@
 
 Point the user to [this section](#obtaining-unix-account) and ask them to send those info to you.
 
+0. If the user ssh key comment contains their email address,
+    replace it with something else.
 1. Edit `/usr/local/etc/staged/common.yaml` on `vm77`, replace the following `ALL_CAP` variables accordingly,
 
     ```yaml

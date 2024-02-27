@@ -46,6 +46,14 @@ Provide the following info and send it to one of us:
     cat ~/.ssh/id_rsa.pub
     ```
 
+    :::{note}
+    For advanced users,
+    if your ssh comment from your key contains your email address,
+    you can specify an alternative comment to be used on our system.
+    Otherwise it will be assigned by us.
+    This is a policy enforced by Blackett.
+    :::
+
 4. (Optional) For typical users, please skip this step. If you need `sudo`, follow the following procedure to generate a salted, hashed password. *On your local machine* (`vm77`'s `openssh` is too old), enter this line,
 
     ```console
