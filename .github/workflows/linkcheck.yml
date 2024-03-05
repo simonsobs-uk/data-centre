@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: filiph/linkcheck@3.0.0
-      with:
-        arguments: '--external --no-check-anchors --skip-file docs/.skip.linkcheck https://docs-ci.souk.ac.uk'
+    - name: install linkcheck
+      run: |
+        wget https://github.com/ickc/bootstrapping-os-environments/raw/master/install/linkcheck.sh
+        bash linkcheck.sh
+    - name: run linkcheck
+      run: make linkcheck
