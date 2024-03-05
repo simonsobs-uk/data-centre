@@ -1,17 +1,20 @@
 name: Linkcheck
 on:
-  workflow_run:
-    workflows:
-      - GitHub Pages
-    types:
-      - completed
+  # workflow_run:
+  #   workflows:
+  #     - GitHub Pages
+  #   types:
+  #     - completed
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: install linkcheck
       run: |
-        wget https://github.com/ickc/bootstrapping-os-environments/raw/master/install/linkcheck.sh
-        bash linkcheck.sh
+        curl -L https://github.com/ickc/bootstrapping-os-environments/raw/master/install/linkcheck.sh | bash
+        which linkcheck
     - name: run linkcheck
       run: make linkcheck
