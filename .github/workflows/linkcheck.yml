@@ -13,4 +13,5 @@ jobs:
     - name: install linkcheck
       run: curl -L https://github.com/ickc/bootstrapping-os-environments/raw/master/install/linkcheck.sh | bash
     - name: run linkcheck
-      run: make linkcheck
+      # don't check external as some sites don't like GitHub Actions
+      run: linkcheck --no-check-anchors https://docs-ci.souk.ac.uk
