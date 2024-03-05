@@ -3,6 +3,10 @@
 
 ## New accounts
 
+### New SO:UK VO membership
+
+Go to [VOMS Admin > souk.ac.uk](https://voms.gridpp.ac.uk:8443/voms/souk.ac.uk/admin/home.action) and manage there. 
+
 (new-users)=
 ### Adding new users on the submit node `vm77`
 
