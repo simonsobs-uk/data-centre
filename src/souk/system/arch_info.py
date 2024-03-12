@@ -231,6 +231,9 @@ class System:
 
 @dataclass
 class Systems:
+    """A class of multiple System.
+    """
+
     systems: list[System]
 
     @classmethod
