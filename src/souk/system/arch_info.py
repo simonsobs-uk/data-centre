@@ -250,7 +250,7 @@ class Systems:
 
     def dataframe_simplified(
         self,
-        columns: list[str] = [
+        columns: tuple[str, ...] = (
             "cpuinfo.brand_raw",
             "archspec.cpu.host.vendor",
             "archspec.cpu.host.name",
@@ -260,7 +260,7 @@ class Systems:
             "psutil.cpu_count.physical",
             "psutil.virtual_memory.total",
             "psutil.swap_memory.total",
-        ],
+        ),
     ) -> pd.DataFrame:
         df = self.dataframe[columns].copy()
         df.index.name = "hostname"
