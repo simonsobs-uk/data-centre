@@ -25,6 +25,7 @@ submit:
 		cd ..; \
 	done
 clean:
+	rm -rf vanilla parallel hostnames.txt
 	find . \( \
 		-name '*.log' -o \
 		-name '*.out' -o \
@@ -33,8 +34,8 @@ clean:
 		-name '*.ini' \
 	\) -delete
 
-.PHONY: csv
-csv: vanilla.csv parallel.csv
+.PHONY: analysis
+analysis: vanilla.csv parallel.csv system.csv system-simplified.csv system-simplified.html system-simplified.md
 vanilla.csv: $(VANILLA_YML)
 	find vanilla -name '*.yml' -exec ../../src/souk/system/arch_info.py collect-arch-info -o $@ {} +
 parallel.csv: $(PARALLEL_YML)
