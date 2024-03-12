@@ -11,7 +11,6 @@ from io import StringIO
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-import archspec
 import archspec.cpu
 import cpuinfo
 import defopt
@@ -109,28 +108,20 @@ class System:
         return uname()
 
     @cached_property
-    def _host(self) -> archspec.cpu.Host:
+    def host(self) -> archspec.cpu.Host:
         return archspec.cpu.host()
 
-    @cached_property
-    def host(self) -> dict[str, Any]:
-        return self._host.to_dict()
-
-    @cached_property
+    @property
     def host_optimization_flags(self) -> str:
-        return self._host.optimization_flags("gcc", 12)
+        return self.host.optimization_flags("gcc", 12)
 
-    @cached_property
-    def _host_generic(self) -> archspec.cpu.Generic:
-        return self._host.generic
+    @property
+    def host_generic(self) -> archspec.cpu.Generic:
+        return self.host.generic
 
-    @cached_property
-    def host_generic(self) -> dict[str, Any]:
-        return self._host_generic.to_dict()
-
-    @cached_property
+    @property
     def host_generic_optimization_flags(self) -> str:
-        return self._host_generic.optimization_flags("gcc", 12)
+        return self.host_generic.optimization_flags("gcc", 12)
 
     @cached_property
     def physical_cpu_count(self) -> int:
@@ -171,11 +162,11 @@ class System:
     def data(self) -> dict[str, Any]:
         data: dict[str, Any] = {}
         data["uname"] = self.uname
-        data["archspec.cpu.host"] = self.host
+        data["archspec.cpu.host"] = self.host.to_dict()
         data["archspec.cpu.host.optimization_flags.gcc_12"] = (
             self.host_optimization_flags
         )
-        data["archspec.cpu.host.generic"] = self.host_generic
+        data["archspec.cpu.host.generic"] = self.host_generic.to_dict()
         data["archspec.cpu.host.generic.optimization_flags.gcc_12"] = (
             self.host_generic_optimization_flags
         )
@@ -205,14 +196,7 @@ class System:
     def from_dict(cls, data: dict[str, Any]) -> System:
         self = cls()
         self.uname = data["uname"]
-        self.host = data["archspec.cpu.host"]
-        self.host_optimization_flags = data[
-            "archspec.cpu.host.optimization_flags.gcc_12"
-        ]
-        self.host_generic = data["archspec.cpu.host.generic"]
-        self.host_generic_optimization_flags = data[
-            "archspec.cpu.host.generic.optimization_flags.gcc_12"
-        ]
+        self.host = archspec.cpu.Microarchitecture.from_dict(data["archspec.cpu.host"])
         self.physical_cpu_count = data["psutil.cpu_count.physical"]
         self.logical_cpu_count = data["psutil.cpu_count.logical"]
         self.cpuinfo = data["cpuinfo"]

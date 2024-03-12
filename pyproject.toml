@@ -45,7 +45,7 @@ include = [
 [tool.poetry.dependencies]
 "fire" = "*"
 "ruamel.yaml" = "*"
-archspec = "*"
+archspec = ">=0.2.3"
 defopt = "*"
 pandas = "*"
 psutil = "*"
