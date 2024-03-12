@@ -25,7 +25,7 @@ submit:
 		cd ..; \
 	done
 clean:
-	rm -rf vanilla parallel hostnames.txt
+	rm -rf vanilla parallel hostnames.txt parallel.csv system-simplified.csv system-simplified.html system-simplified.md system.csv vanilla.csv
 	find . \( \
 		-name '*.log' -o \
 		-name '*.out' -o \
