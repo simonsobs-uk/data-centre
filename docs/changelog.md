@@ -13,7 +13,7 @@
             - for new users to get onboarding
             - for new users to ssh for the first time
             - on launch MPI job in the vanilla universe (set `*_NUM_THREADS` explicitly)
-        - use our own domain name at <docs.souk.ac.uk>
+        - use our own domain name at <https://docs.souk.ac.uk>
         - update badges
     - library:
         - add ini_formatter
