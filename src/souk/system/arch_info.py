@@ -123,10 +123,6 @@ class System:
     def host_generic_optimization_flags(self) -> str:
         return self.host_generic.optimization_flags("gcc", 12)
 
-    @property
-    def host_generation(self) -> int:
-        return self.host.generation
-
     @cached_property
     def physical_cpu_count(self) -> int:
         return psutil.cpu_count(logical=False)
@@ -167,7 +163,6 @@ class System:
         data: dict[str, Any] = {}
         data["uname"] = self.uname
         data["archspec.cpu.host"] = self.host.to_dict()
-        data["archspec.cpu.host.generation"] = self.host_generation
         data["archspec.cpu.host.optimization_flags.gcc_12"] = (
             self.host_optimization_flags
         )
@@ -245,7 +240,6 @@ class Systems:
             "cpuinfo.brand_raw",
             "archspec.cpu.host.vendor",
             "archspec.cpu.host.name",
-            "archspec.cpu.host.generation",
             "archspec.cpu.host.generic.name",
             "system_cpu_info.Socket(s)",
             "psutil.cpu_count.logical",
