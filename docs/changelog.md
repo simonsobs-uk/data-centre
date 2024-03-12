@@ -1,6 +1,31 @@
 (changelog)=
 # Changelog
 
+- v0.4.0: Miscellaneous improvements
+    - doc:
+        - additions:
+            - "Tips and gotchas when writing HTCondor ClassAds"
+            - "Killing your jobs"
+            - "Modifying our maintained software environments for software development"
+            - "System specifications"
+        - improvements:
+            - on adding new users by maintainers
+            - for new users to get onboarding
+            - for new users to ssh for the first time
+            - on launch MPI job in the vanilla universe (set `*_NUM_THREADS` explicitly)
+        - use our own domain name at <docs.souk.ac.uk>
+        - update badges
+    - library:
+        - add ini_formatter
+        - add arg_string
+        - improve arch_info
+    - technical:
+        - add CI for linkcheck
+        - remove YAML safe dump
+        - improve ClassAd white spaces in documentation
+        - add formatters for py, ini
+            - setup mypy and fix mypy errors
+- v0.3.2: Fix PyPI README
 - v0.3.1: First PyPI release
     - Python package:
         - rename the Python package to souk and publish to PyPI
