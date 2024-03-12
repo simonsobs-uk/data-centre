@@ -254,7 +254,7 @@ class Systems:
             "psutil.swap_memory.total",
         ),
     ) -> pd.DataFrame:
-        df = self.dataframe[columns].copy()
+        df = self.dataframe[list(columns)].copy()
         df.index.name = "hostname"
         # cast type
         for key in (
