@@ -9,6 +9,8 @@ import pandas as pd
 
 from souk.system.arch_info import Systems
 
+pd.set_option('future.no_silent_downcasting', True)
+
 
 def merge_df(
     df_left: pd.DataFrame,
@@ -53,7 +55,7 @@ def merge_df(
     for col_other in df_merged.columns:
         if col_other not in columns:
             col = col_other[:-10]
-            df_merged[col].fillna(df_merged[col_other], inplace=True)
+            df_merged[col] = df_merged[col].fillna(df_merged[col_other])
             df_merged.drop(columns=[col_other], inplace=True)
     return df_merged
 
@@ -74,7 +76,7 @@ def main(
 
     df_merged = merge_df(*dfs)
     for universe in universes:
-        df_merged[f"{universe} universe"].fillna(False, inplace=True)
+        df_merged[f"{universe} universe"] = df_merged[f"{universe} universe"].fillna(False).infer_objects(copy=False)
 
     if simplified:
         # cast
