@@ -172,13 +172,13 @@ class System:
         data: dict[str, Any] = {}
         data["uname"] = self.uname
         data["archspec.cpu.host"] = self.host
-        data[
-            "archspec.cpu.host.optimization_flags.gcc_12"
-        ] = self.host_optimization_flags
+        data["archspec.cpu.host.optimization_flags.gcc_12"] = (
+            self.host_optimization_flags
+        )
         data["archspec.cpu.host.generic"] = self.host_generic
-        data[
-            "archspec.cpu.host.generic.optimization_flags.gcc_12"
-        ] = self.host_generic_optimization_flags
+        data["archspec.cpu.host.generic.optimization_flags.gcc_12"] = (
+            self.host_generic_optimization_flags
+        )
         data["psutil.cpu_count.physical"] = self.physical_cpu_count
         data["psutil.cpu_count.logical"] = self.logical_cpu_count
         data["cpuinfo"] = self.cpuinfo
@@ -231,8 +231,7 @@ class System:
 
 @dataclass
 class Systems:
-    """A class of multiple System.
-    """
+    """A class of multiple System."""
 
     systems: list[System]
 
