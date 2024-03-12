@@ -30,7 +30,7 @@ def ini_formatter(
         # filter empty lines
         data = [line for line in data if line != ("", "")]
         data.sort(key=lambda x: x[0])
-    max_len: int = max(len(item[0]) for item in data) if align_column else 0
+    max_len: int = max(len(item[0]) for item in data if item[1]) if align_column else 0
     with path.open("w", encoding="utf-8") as f:
         for key, value in data:
             if value:
